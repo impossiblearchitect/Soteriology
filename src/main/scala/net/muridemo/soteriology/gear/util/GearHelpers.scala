@@ -24,6 +24,8 @@ import java.util.Optional
 import scala.jdk.OptionConverters.*
 import scala.jdk.CollectionConverters.*
 
+import net.minecraft.resources.ResourceLocation
+
 import com.verdantartifice.primalmagick.common.armortrim.TrimPatternsPM
 import com.verdantartifice.primalmagick.common.items.misc.RuneItem
 import com.verdantartifice.primalmagick.common.runes.SourceRune
@@ -32,6 +34,11 @@ import com.verdantartifice.primalmagick.common.attunements.AttunementManager
 import com.verdantartifice.primalmagick.common.attunements.AttunementThreshold
 import com.verdantartifice.primalmagick.common.effects.EffectsPM
 import com.verdantartifice.primalmagick.common.items.armor.IManaDiscountGear
+import com.verdantartifice.primalmagick.common.tags.ItemTagsPM
+
+import net.silentchaos512.gear.util.GearHelper
+
+import net.muridemo.soteriology.Soteriology
 
 object GearHelpers:
   extension (context: TraitActionContext) {
@@ -89,6 +96,12 @@ object GearHelpers:
       1.0 - (gearDiscount + attunementDiscount + effectDiscount - effectPenalty)
     }
 
+  extension (stack: ItemStack)
+    def isSilentGear = GearHelper.isGear(stack)
+    def hasTrait(`trait`: ResourceLocation) = TraitHelper.hasTrait(stack, `trait`)
+    def getTraitLevel(`trait`: ResourceLocation) = TraitHelper.getTraitLevel(stack, `trait`)
+    def isWardable = stack.is(ItemTagsPM.WARDABLE_ARMOR) || (stack.isSilentGear && stack.hasTrait(Soteriology.WARDABLE_ID))
+    
   // extension [T <: SimpleTrait](`trait`: T) {
   //   def getSetPieceCount(`type`: String, player: Player): Int = {
   //     if (!"armor".equals(`type`))

@@ -221,6 +221,11 @@ dependencies {
 mixin {
     add sourceSets.main, 'mixins.soteriology.refmap.json'
     config 'mixins.soteriology.json'
+    debug {
+        verbose = true
+        export = true
+        countInjections = true
+    }
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

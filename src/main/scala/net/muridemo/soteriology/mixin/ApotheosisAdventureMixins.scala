@@ -20,7 +20,8 @@ object ApotheosisAdventureMixins {
       value = "INVOKE",
       target = "Lcom/google/common/collect/ImmutableSet;of",
       ordinal = 1
-    )
+    ),
+    require = 1
   )
   private def adjustReforgingValidBlocks(b1: ReforgingTableBlock, b2: ReforgingTableBlock, callback: CallbackInfoReturnable[ImmutableSet[ReforgingTableBlock]]) = {
     callback.setReturnValue {
