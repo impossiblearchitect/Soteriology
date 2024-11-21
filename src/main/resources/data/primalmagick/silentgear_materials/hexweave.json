@@ -1,0 +1,130 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "harvest_tier": "minecraft:wood",
+  "availability": {
+    "tier": 4,
+    "categories": [
+      "organic",
+      "cloth"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "item": "primalmagick:hexweave"
+    }
+  },
+  "name": {
+    "translate": "material.primalmagick.hexweave"
+  },
+  "stats": {
+    "main": {
+      "durability": 0.0,
+      "armor_durability": 35.0,
+      "enchantment_value": 27.0,
+      "rarity": 40.0,
+      "charging_value": 1.2,
+      "armor": 22.0,
+      "armor/helmet": 3.0,
+      "armor/chestplate": 9.0,
+      "armor/leggings": 7.0,
+      "armor/boots": 3.0,
+      "armor_toughness": 8.0,
+      "magic_armor": 30.0,
+      "soteriology:mana_efficiency": 20.0
+    },
+    "grip": {
+      "harvest_speed": {
+        "mul1": 0.25
+      },
+      "attack_speed": {
+        "add": 0.4
+      }
+    },
+    "lining": {
+      "armor": {
+        "mul1": 0.25
+      },
+      "armor_durability": {
+        "mul1": 0.18
+      },
+      "armor_toughness": {
+        "add": 4.0
+      },
+      "knockback_resistance": {
+        "add": 0.8
+      },
+      "magic_armor": {
+        "add": 22.5
+      },
+      "soteriology:mana_efficiency": {
+        "max": 15.0
+      }
+    }
+  },
+  "traits": {
+    "main": [
+      {
+        "name": "silentgear:malleable",
+        "level": 3
+      },
+      {
+        "name": "silentgear:snow_walker",
+        "level": 1,
+        "conditions": [
+          {
+            "type": "silentgear:gear_type",
+            "gear_type": "boots"
+          }
+        ]
+      }
+    ],
+    "grip": [
+      {
+        "name": "silentgear:malleable",
+        "level": 2
+      }
+    ],
+    "lining": [
+      {
+        "name": "silentgear:malleable",
+        "level": 4
+      }
+    ]
+  },
+  "model": {
+    "main/all": [
+      {
+        "texture": "silentgear:main_generic_lc",
+        "color": "#781E28"
+      }
+    ],
+    "main/fragment": [
+      {
+        "texture": "silentgear:cloth",
+        "color": "#781E28"
+      }
+    ],
+    "grip/all": [
+      {
+        "texture": "silentgear:grip_wool",
+        "color": "#781E28"
+      }
+    ],
+    "grip/part": [
+      {
+        "texture": "silentgear:grip",
+        "color": "#781E28"
+      }
+    ],
+    "lining/part": [
+      {
+        "texture": "silentgear:lining_cloth",
+        "color": "#781E28"
+      }
+    ]
+  }
+}

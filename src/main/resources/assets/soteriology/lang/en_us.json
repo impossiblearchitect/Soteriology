@@ -1,0 +1,20 @@
+{
+  "material.primalmagick.spellcloth": "Spellcloth",
+  "material.primalmagick.hexweave": "Hexweave",
+  "material.primalmagick.saintswool": "Saintswool",
+  "material.primalmagick.primalite": "Primalite",
+  "material.primalmagick.hallowsteel": "Hallowsteel",
+  "material.primalmagick.hexium": "Hexium",
+
+  "trait.primalmagick.well_of_magick": "Well of Magick",
+  "trait.primalmagick.well_of_magick.desc": "Allows armor to be warded; higher levels grant bonus mana capacity.",
+
+  "block.soteriology.superior_reforging_table": "Superior Reforging Table",
+
+  "stat.soteriology.mana_efficiency": "Mana Efficiency",
+
+  "trait.soteriology.harmonic": "Harmonic",
+  "trait.soteriology.neptunes_might": "Neptune's Might",
+  "trait.soteriology.neptunes_might.desc": "Grants strength while in water or rain."
+
+}

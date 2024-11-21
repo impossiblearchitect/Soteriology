@@ -1,0 +1,10 @@
+{
+  "type": "silentgear:simple_trait",
+  "max_level": 5,
+  "name": {
+    "translate": "trait.primalmagick.well_of_magick"
+  },
+  "description": {
+    "translate": "trait.primalmagick.well_of_magick.desc"
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "harvest_tier": "minecraft:diamond",
+  "availability": {
+    "tier": 5,
+    "categories": [
+      "metal"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "item": "primalmagick:hallowsteel_ingot"
+    }
+  },
+  "name": {
+    "translate": "material.primalmagick.hallowsteel"
+  },
+  
+  "stats": {
+    "main": {
+      "durability": 2400.0,
+      "armor_durability": 45.0,
+      "enchantment_value": 23.0,
+      "rarity": 80.0,
+      "charging_value": 2.5,
+      "harvest_speed": 10.0,
+      "melee_damage": 5.5,
+      "magic_damage": 1.0,
+      "ranged_damage": 1.88888888,
+      "projectile_speed": 2.0,
+      "projectile_accuracy": 2.5,
+      "armor": 28.0,
+      "armor/helmet": 5.0,
+      "armor/chestplate": 10.0,
+      "armor/leggings": 8.0,
+      "armor/boots": 5.0,
+      "armor_toughness": 12.0,
+      "magic_armor": 32.0,
+      "knockback_resistance": 2.0
+    },
+    "rod": {
+      "enchantment_value": {
+        "mul1": 0.5
+      },
+      "durability": {
+        "mul2": 0.5
+      },
+      "melee_damage": {
+        "mul2": 0.33333333
+      },
+      "projectile_speed": {
+        "mul2": 2.0 
+      },
+      "projectile_accuracy": {
+        "mul2": 2.5 
+      },
+      "rarity": 80.0
+    },
+    "tip": {
+      "durability": {
+        "mul2": 0.25
+      },
+      "armor_durability": {
+        "mul2": 0.25
+      },
+      "harvest_speed": {
+        "add": 2.5
+      },
+      "melee_damage": {
+        "add": 2.0
+      },
+      "ranged_speed": {
+        "add": 0.4
+      },
+      "rarity": {
+        "add": 40.0
+      },
+      "enchantment_value": {
+        "mul2": 0.5
+      }
+    }
+  },
+  "traits": {
+    "main": [
+      {
+        "name": "silentgear:sturdy",
+        "level": 3
+      },
+      {
+        "name": "silentgear:holy",
+        "level": 5
+      },
+      {
+        "name": "soteriology:harmonic",
+        "level": 5
+      },
+      {
+        "name": "silentcompat:spell_damage",
+        "level": 4
+      },
+      {
+        "name": "primalmagick:well_of_magick",
+        "level": 3
+      },
+      {
+        "name": "primalmagick:well_of_magick",
+        "level": 5,
+        "conditions": [
+          {
+            "type": "silentgear:material_ratio",
+            "ratio": 0.5
+          }
+        ]
+      }
+    ],
+    "rod": [
+      {
+        "name": "silentgear:sturdy",
+        "level": 2
+      },
+      {
+        "name": "soteriology:harmonic",
+        "level": 3
+      }
+    ],
+    "tip": [
+      {
+        "name": "silentgear:sturdy",
+        "level": 2
+      },
+      {
+        "name": "soteriology:harmonic",
+        "level": 3
+      },
+      {
+        "name": "primalmagick:well_of_magick",
+        "level": 5
+      }
+    ]
+  },
+  "model": {
+    "main/all": [
+      {
+        "texture": "silentgear:main_generic_hc",
+        "color": "#FAFCDD"
+      },
+      {
+        "texture": "silentgear:_highlight"
+      }
+    ],
+    "main/fragment": [
+      {
+        "texture": "silentgear:metal",
+        "color": "#FAFCDD"
+      }
+    ],
+    "rod/all": [
+      {
+        "texture": "silentgear:rod_generic_hc",
+        "color": "#FAFCDD"
+      }
+    ],
+    "rod/part": [
+      {
+        "texture": "silentgear:rod",
+        "color": "#FAFCDD"
+      }
+    ],
+    "tip/all": [
+      {
+        "texture": "silentgear:tip_sharp",
+        "color": "#FAFCDD"
+      }
+    ],
+    "tip/part": [
+      {
+        "texture": "silentgear:tip_base"
+      },
+      {
+        "texture": "silentgear:tip",
+        "color": "#FAFCDD"
+      },
+      {
+        "texture": "silentgear:tip_shine"
+      }
+    ]
+  }
+}

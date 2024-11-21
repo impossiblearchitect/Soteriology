@@ -1,0 +1,2372 @@
+tsrg2 left right
+net/minecraft/world/entity/Entity net/minecraft/world/entity/Entity
+	BASE_TICKS_REQUIRED_TO_FREEZE f_146822_
+	BOARDING_COOLDOWN f_146817_
+	BREATHING_DISTANCE_BELOW_EYES f_146821_
+	DATA_AIR_SUPPLY_ID f_19832_
+	DATA_CUSTOM_NAME f_19833_
+	DATA_CUSTOM_NAME_VISIBLE f_19834_
+	DATA_NO_GRAVITY f_19836_
+	DATA_POSE f_19806_
+	DATA_SHARED_FLAGS_ID f_19805_
+	DATA_SILENT f_19835_
+	DATA_TICKS_FROZEN f_146800_
+	DEFAULT_BB_HEIGHT f_146793_
+	DEFAULT_BB_WIDTH f_146792_
+	DELTA_AFFECTED_BY_BLOCKS_BELOW_0_2 f_286980_
+	DELTA_AFFECTED_BY_BLOCKS_BELOW_0_5 f_286994_
+	DELTA_AFFECTED_BY_BLOCKS_BELOW_1_0 f_287009_
+	EMPTY_LIST f_19844_
+	ENTITY_COUNTER f_19843_
+	FLAG_FALL_FLYING f_146807_
+	FLAG_GLOWING f_146806_
+	FLAG_INVISIBLE f_146799_
+	FLAG_ONFIRE f_146805_
+	FLAG_SHIFT_KEY_DOWN f_146796_
+	FLAG_SPRINTING f_146797_
+	FLAG_SWIMMING f_146798_
+	FREEZE_HURT_FREQUENCY f_146823_
+	ID_TAG f_146815_
+	INITIAL_AABB f_19845_
+	LAVA_FAST_FLOW_SCALE f_146811_
+	LAVA_SLOW_FLOW_SCALE f_146812_
+	LOGGER f_19849_
+	MAX_ENTITY_TAG_COUNT f_146819_
+	PASSENGERS_TAG f_146816_
+	TOTAL_AIR_SUPPLY f_146818_
+	UUID_TAG f_146824_
+	WATER_FLOW_SCALE f_146814_
+	bb f_19828_
+	blockPosition f_19826_
+	blocksBuilding f_19850_
+	boardingCooldown f_19851_
+	chunkPosition f_185933_
+	crystalSoundIntensity f_146803_
+	deltaMovement f_19827_
+	dimensions f_19815_
+	entityData f_19804_
+	eyeHeight f_19816_
+	fallDistance f_19789_
+	feetBlockState f_185934_
+	firstTick f_19803_
+	fluidHeight f_19799_
+	fluidOnEyes f_19801_
+	flyDist f_146794_
+	hasGlowingTag f_146802_
+	hasImpulse f_19812_
+	hasVisualFire f_146813_
+	horizontalCollision f_19862_
+	hurtMarked f_19864_
+	id f_19848_
+	invulnerable f_19840_
+	invulnerableTime f_19802_
+	isInPowderSnow f_146808_
+	isInsidePortal f_19817_
+	lastCrystalSoundPlayTick f_146804_
+	level f_19853_
+	levelCallback f_146801_
+	mainSupportingBlockPos f_285638_
+	maxUpStep f_19793_
+	minorHorizontalCollision f_185931_
+	moveDist f_19788_
+	nextStep f_19829_
+	noCulling f_19811_
+	noPhysics f_19794_
+	onGround f_19861_
+	onGroundNoBlocks f_286942_
+	packetPositionCodec f_216985_
+	passengers f_19823_
+	pistonDeltas f_19813_
+	pistonDeltasGameTime f_19814_
+	portalCooldown f_19839_
+	portalEntrancePos f_19819_
+	portalTime f_19818_
+	position f_19825_
+	random f_19796_
+	remainingFireTicks f_19831_
+	removalReason f_146795_
+	stringUUID f_19821_
+	stuckSpeedMultiplier f_19865_
+	tags f_19841_
+	tickCount f_19797_
+	type f_19847_
+	uuid f_19820_
+	vehicle f_19824_
+	verticalCollision f_19863_
+	verticalCollisionBelow f_201939_
+	viewScale f_19846_
+	walkDist f_19787_
+	walkDistO f_19867_
+	wasEyeInWater f_19800_
+	wasInPowderSnow f_146809_
+	wasOnFire f_146810_
+	wasTouchingWater f_19798_
+	xOld f_19790_
+	xRot f_19858_
+	xRotO f_19860_
+	xo f_19854_
+	yOld f_19791_
+	yRot f_19857_
+	yRotO f_19859_
+	yo f_19855_
+	zOld f_19792_
+	zo f_19856_
+	<clinit> ()V <clinit>
+		static
+	<init> (Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)V <init>
+		0 p_19870_ p_19870_
+		1 p_19871_ p_19871_
+	absMoveTo (DDDFF)V m_19890_
+		0 p_19891_ p_19891_
+		1 p_19892_ p_19892_
+		2 p_19893_ p_19893_
+		3 p_19894_ p_19894_
+		4 p_19895_ p_19895_
+	absMoveTo (DDD)V m_20248_
+		0 p_20249_ p_20249_
+		1 p_20250_ p_20250_
+		2 p_20251_ p_20251_
+	acceptsFailure ()Z m_7028_
+	acceptsSuccess ()Z m_6999_
+	addAdditionalSaveData (Lnet/minecraft/nbt/CompoundTag;)V m_7380_
+		0 p_20139_ p_20139_
+	addDeltaMovement (Lnet/minecraft/world/phys/Vec3;)V m_246865_
+		0 p_250128_ p_250128_
+	addPassenger (Lnet/minecraft/world/entity/Entity;)V m_20348_
+		0 p_20349_ p_20349_
+	addTag (Ljava/lang/String;)Z m_20049_
+		0 p_20050_ p_20050_
+	animateHurt (F)V m_6053_
+		0 p_265161_ p_265161_
+	applyPistonMovementRestriction (Lnet/minecraft/core/Direction$Axis;D)D m_20042_
+		0 p_20043_ p_20043_
+		1 p_20044_ p_20044_
+	awardKillScore (Lnet/minecraft/world/entity/Entity;ILnet/minecraft/world/damagesource/DamageSource;)V m_5993_
+		0 p_19953_ p_19953_
+		1 p_19954_ p_19954_
+		2 p_19955_ p_19955_
+	baseTick ()V m_6075_
+	blockPosition ()Lnet/minecraft/core/BlockPos; m_20183_
+	broadcastToPlayer (Lnet/minecraft/server/level/ServerPlayer;)Z m_6459_
+		0 p_19937_ p_19937_
+	calculateUpVector (FF)Lnet/minecraft/world/phys/Vec3; m_20214_
+		0 p_20215_ p_20215_
+		1 p_20216_ p_20216_
+	calculateViewVector (FF)Lnet/minecraft/world/phys/Vec3; m_20171_
+		0 p_20172_ p_20172_
+		1 p_20173_ p_20173_
+	canAddPassenger (Lnet/minecraft/world/entity/Entity;)Z m_7310_
+		0 p_20354_ p_20354_
+	canBeCollidedWith ()Z m_5829_
+	canBeHitByProjectile ()Z m_271807_
+	canChangeDimensions ()Z m_6072_
+	canCollideWith (Lnet/minecraft/world/entity/Entity;)Z m_7337_
+		0 p_20303_ p_20303_
+	canEnterPose (Lnet/minecraft/world/entity/Pose;)Z m_20175_
+		0 p_20176_ p_20176_
+	canFreeze ()Z m_142079_
+	canRide (Lnet/minecraft/world/entity/Entity;)Z m_7341_
+		0 p_20339_ p_20339_
+	canSpawnSprintParticle ()Z m_5843_
+	canSprint ()Z m_264410_
+	causeFallDamage (FFLnet/minecraft/world/damagesource/DamageSource;)Z m_142535_
+		0 p_146828_ p_146828_
+		1 p_146829_ p_146829_
+		2 p_146830_ p_146830_
+	changeDimension (Lnet/minecraft/server/level/ServerLevel;)Lnet/minecraft/world/entity/Entity; m_5489_
+		0 p_20118_ p_20118_
+	checkBelowWorld ()V m_146871_
+	checkDespawn ()V m_6043_
+	checkFallDamage (DZLnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/BlockPos;)V m_7840_
+		0 p_19911_ p_19911_
+		1 p_19912_ p_19912_
+		2 p_19913_ p_19913_
+		3 p_19914_ p_19914_
+	checkInsideBlocks ()V m_20101_
+	checkSlowFallDistance ()V m_245125_
+	checkSupportingBlock (ZLnet/minecraft/world/phys/Vec3;)V m_289600_
+		0 p_289694_ p_289694_
+		1 p_289680_ p_289680_
+	chunkPosition ()Lnet/minecraft/world/level/ChunkPos; m_146902_
+	clearFire ()V m_20095_
+	closerThan (Lnet/minecraft/world/entity/Entity;DD)Z m_216992_
+		0 p_216993_ p_216993_
+		1 p_216994_ p_216994_
+		2 p_216995_ p_216995_
+	closerThan (Lnet/minecraft/world/entity/Entity;D)Z m_19950_
+		0 p_19951_ p_19951_
+		1 p_19952_ p_19952_
+	collide (Lnet/minecraft/world/phys/Vec3;)Lnet/minecraft/world/phys/Vec3; m_20272_
+		0 p_20273_ p_20273_
+	collideBoundingBox (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/AABB;Lnet/minecraft/world/level/Level;Ljava/util/List;)Lnet/minecraft/world/phys/Vec3; m_198894_
+		static
+		0 p_198895_ p_198895_
+		1 p_198896_ p_198896_
+		2 p_198897_ p_198897_
+		3 p_198898_ p_198898_
+		4 p_198899_ p_198899_
+	collideWithShapes (Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/AABB;Ljava/util/List;)Lnet/minecraft/world/phys/Vec3; m_198900_
+		static
+		0 p_198901_ p_198901_
+		1 p_198902_ p_198902_
+		2 p_198903_ p_198903_
+	copyPosition (Lnet/minecraft/world/entity/Entity;)V m_20359_
+		0 p_20360_ p_20360_
+	couldAcceptPassenger ()Z m_269011_
+	createCommandSourceStack ()Lnet/minecraft/commands/CommandSourceStack; m_20203_
+	createHoverEvent ()Lnet/minecraft/network/chat/HoverEvent; m_20190_
+	damageSources ()Lnet/minecraft/world/damagesource/DamageSources; m_269291_
+	dampensVibrations ()Z m_213854_
+	defineSynchedData ()V m_8097_
+	discard ()V m_146870_
+	dismountTo (DDD)V m_142098_
+		0 p_146825_ p_146825_
+		1 p_146826_ p_146826_
+		2 p_146827_ p_146827_
+	dismountsUnderwater ()Z m_275843_
+	displayFireAnimation ()Z m_6051_
+	distanceTo (Lnet/minecraft/world/entity/Entity;)F m_20270_
+		0 p_20271_ p_20271_
+	distanceToSqr (Lnet/minecraft/world/entity/Entity;)D m_20280_
+		0 p_20281_ p_20281_
+	distanceToSqr (DDD)D m_20275_
+		0 p_20276_ p_20276_
+		1 p_20277_ p_20277_
+		2 p_20278_ p_20278_
+	distanceToSqr (Lnet/minecraft/world/phys/Vec3;)D m_20238_
+		0 p_20239_ p_20239_
+	doEnchantDamageEffects (Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/Entity;)V m_19970_
+		0 p_19971_ p_19971_
+		1 p_19972_ p_19972_
+	doWaterSplashEffect ()V m_5841_
+	ejectPassengers ()V m_20153_
+	equals (Ljava/lang/Object;)Z equals
+		0 p_20245_ p_20245_
+	extinguishFire ()V m_252836_
+	fillCrashReportCategory (Lnet/minecraft/CrashReportCategory;)V m_7976_
+		0 p_20051_ p_20051_
+	findDimensionEntryPoint (Lnet/minecraft/server/level/ServerLevel;)Lnet/minecraft/world/level/portal/PortalInfo; m_7937_
+		0 p_19923_ p_19923_
+	fireImmune ()Z m_5825_
+	fixupDimensions ()V m_252801_
+	gameEvent (Lnet/minecraft/world/level/gameevent/GameEvent;Lnet/minecraft/world/entity/Entity;)V m_146852_
+		0 p_146853_ p_146853_
+		1 p_146854_ p_146854_
+	gameEvent (Lnet/minecraft/world/level/gameevent/GameEvent;)V m_146850_
+		0 p_146851_ p_146851_
+	getAddEntityPacket ()Lnet/minecraft/network/protocol/Packet; m_5654_
+	getAirSupply ()I m_20146_
+	getAllSlots ()Ljava/lang/Iterable; m_20158_
+	getArmorSlots ()Ljava/lang/Iterable; m_6168_
+	getBbHeight ()F m_20206_
+	getBbWidth ()F m_20205_
+	getBlockExplosionResistance (Lnet/minecraft/world/level/Explosion;Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/material/FluidState;F)F m_7077_
+		0 p_19992_ p_19992_
+		1 p_19993_ p_19993_
+		2 p_19994_ p_19994_
+		3 p_19995_ p_19995_
+		4 p_19996_ p_19996_
+		5 p_19997_ p_19997_
+	getBlockJumpFactor ()F m_20098_
+	getBlockPosBelowThatAffectsMyMovement ()Lnet/minecraft/core/BlockPos; m_20099_
+	getBlockSpeedFactor ()F m_6041_
+	getBlockStateOn ()Lnet/minecraft/world/level/block/state/BlockState; m_20075_
+	getBlockStateOnLegacy ()Lnet/minecraft/world/level/block/state/BlockState; m_217002_
+	getBlockX ()I m_146903_
+	getBlockY ()I m_146904_
+	getBlockZ ()I m_146907_
+	getBoundingBox ()Lnet/minecraft/world/phys/AABB; m_20191_
+	getBoundingBoxForCulling ()Lnet/minecraft/world/phys/AABB; m_6921_
+	getBoundingBoxForPose (Lnet/minecraft/world/entity/Pose;)Lnet/minecraft/world/phys/AABB; m_20217_
+		0 p_20218_ p_20218_
+	getCollisionHorizontalEscapeVector (DDF)Lnet/minecraft/world/phys/Vec3; m_19903_
+		static
+		0 p_19904_ p_19904_
+		1 p_19905_ p_19905_
+		2 p_19906_ p_19906_
+	getCommandSenderWorld ()Lnet/minecraft/world/level/Level; m_20193_
+	getControlledVehicle ()Lnet/minecraft/world/entity/Entity; m_275832_
+	getControllingPassenger ()Lnet/minecraft/world/entity/LivingEntity; m_6688_
+	getCustomName ()Lnet/minecraft/network/chat/Component; m_7770_
+	getDeltaMovement ()Lnet/minecraft/world/phys/Vec3; m_20184_
+	getDimensionChangingDelay ()I m_6045_
+	getDimensions (Lnet/minecraft/world/entity/Pose;)Lnet/minecraft/world/entity/EntityDimensions; m_6972_
+		0 p_19975_ p_19975_
+	getDirection ()Lnet/minecraft/core/Direction; m_6350_
+	getDismountLocationForPassenger (Lnet/minecraft/world/entity/LivingEntity;)Lnet/minecraft/world/phys/Vec3; m_7688_
+		0 p_20123_ p_20123_
+	getDisplayName ()Lnet/minecraft/network/chat/Component; m_5446_
+	getEncodeId ()Ljava/lang/String; m_20078_
+	getEntityData ()Lnet/minecraft/network/syncher/SynchedEntityData; m_20088_
+	getExitPortal (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;ZLnet/minecraft/world/level/border/WorldBorder;)Ljava/util/Optional; m_183318_
+		0 p_185935_ p_185935_
+		1 p_185936_ p_185936_
+		2 p_185937_ p_185937_
+		3 p_185938_ p_185938_
+	getEyeHeight (Lnet/minecraft/world/entity/Pose;Lnet/minecraft/world/entity/EntityDimensions;)F m_6380_
+		0 p_19976_ p_19976_
+		1 p_19977_ p_19977_
+	getEyeHeight ()F m_20192_
+	getEyeHeight (Lnet/minecraft/world/entity/Pose;)F m_20236_
+		0 p_20237_ p_20237_
+	getEyePosition (F)Lnet/minecraft/world/phys/Vec3; m_20299_
+		0 p_20300_ p_20300_
+	getEyePosition ()Lnet/minecraft/world/phys/Vec3; m_146892_
+	getEyeY ()D m_20188_
+	getFeetBlockState ()Lnet/minecraft/world/level/block/state/BlockState; m_146900_
+	getFireImmuneTicks ()I m_6101_
+	getFirstPassenger ()Lnet/minecraft/world/entity/Entity; m_146895_
+	getFluidHeight (Lnet/minecraft/tags/TagKey;)D m_204036_
+		0 p_204037_ p_204037_
+	getFluidJumpThreshold ()D m_20204_
+	getForward ()Lnet/minecraft/world/phys/Vec3; m_20156_
+	getHandHoldingItemAngle (Lnet/minecraft/world/item/Item;)Lnet/minecraft/world/phys/Vec3; m_204034_
+		0 p_204035_ p_204035_
+	getHandSlots ()Ljava/lang/Iterable; m_6167_
+	getId ()I m_19879_
+	getIndirectPassengers ()Ljava/lang/Iterable; m_146897_
+	getIndirectPassengersStream ()Ljava/util/stream/Stream; m_146920_
+	getInputVector (Lnet/minecraft/world/phys/Vec3;FF)Lnet/minecraft/world/phys/Vec3; m_20015_
+		static
+		0 p_20016_ p_20016_
+		1 p_20017_ p_20017_
+		2 p_20018_ p_20018_
+	getLeashOffset ()Lnet/minecraft/world/phys/Vec3; m_7939_
+	getLeashOffset (F)Lnet/minecraft/world/phys/Vec3; m_245894_
+		0 p_249286_ p_249286_
+	getLightLevelDependentMagicValue ()F m_213856_
+	getLightProbePosition (F)Lnet/minecraft/world/phys/Vec3; m_7371_
+		0 p_20309_ p_20309_
+	getLookAngle ()Lnet/minecraft/world/phys/Vec3; m_20154_
+	getMaxAirSupply ()I m_6062_
+	getMaxFallDistance ()I m_6056_
+	getMotionDirection ()Lnet/minecraft/core/Direction; m_6374_
+	getMovementEmission ()Lnet/minecraft/world/entity/Entity$MovementEmission; m_142319_
+	getMyRidingOffset ()D m_6049_
+	getName ()Lnet/minecraft/network/chat/Component; m_7755_
+	getNameTagOffsetY ()F m_278726_
+	getOnPos ()Lnet/minecraft/core/BlockPos; m_20097_
+	getOnPos (F)Lnet/minecraft/core/BlockPos; m_216986_
+		0 p_216987_ p_216987_
+	getOnPosLegacy ()Lnet/minecraft/core/BlockPos; m_216999_
+	getPassengers ()Ljava/util/List; m_20197_
+	getPassengersAndSelf ()Ljava/util/stream/Stream; m_142429_
+	getPassengersRidingOffset ()D m_6048_
+	getPercentFrozen ()F m_146889_
+	getPermissionLevel ()I m_8088_
+	getPickRadius ()F m_6143_
+	getPickResult ()Lnet/minecraft/world/item/ItemStack; m_142340_
+	getPistonPushReaction ()Lnet/minecraft/world/level/material/PushReaction; m_7752_
+	getPortalCooldown ()I m_287157_
+	getPortalWaitTime ()I m_6078_
+	getPose ()Lnet/minecraft/world/entity/Pose; m_20089_
+	getPosition (F)Lnet/minecraft/world/phys/Vec3; m_20318_
+		0 p_20319_ p_20319_
+	getPositionCodec ()Lnet/minecraft/network/protocol/game/VecDeltaCodec; m_217001_
+	getPrimaryStepSoundBlockPos (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/core/BlockPos; m_276951_
+		0 p_278049_ p_278049_
+	getRandomX (D)D m_20208_
+		0 p_20209_ p_20209_
+	getRandomY ()D m_20187_
+	getRandomZ (D)D m_20262_
+		0 p_20263_ p_20263_
+	getRelativePortalPosition (Lnet/minecraft/core/Direction$Axis;Lnet/minecraft/BlockUtil$FoundRectangle;)Lnet/minecraft/world/phys/Vec3; m_7643_
+		0 p_20045_ p_20045_
+		1 p_20046_ p_20046_
+	getRemainingFireTicks ()I m_20094_
+	getRemovalReason ()Lnet/minecraft/world/entity/Entity$RemovalReason; m_146911_
+	getRootVehicle ()Lnet/minecraft/world/entity/Entity; m_20201_
+	getRopeHoldPosition (F)Lnet/minecraft/world/phys/Vec3; m_7398_
+		0 p_20347_ p_20347_
+	getRotationVector ()Lnet/minecraft/world/phys/Vec2; m_20155_
+	getScoreboardName ()Ljava/lang/String; m_6302_
+	getSelfAndPassengers ()Ljava/util/stream/Stream; m_20199_
+	getServer ()Lnet/minecraft/server/MinecraftServer; m_20194_
+	getSharedFlag (I)Z m_20291_
+		0 p_20292_ p_20292_
+	getSlot (I)Lnet/minecraft/world/entity/SlotAccess; m_141942_
+		0 p_146919_ p_146919_
+	getSoundSource ()Lnet/minecraft/sounds/SoundSource; m_5720_
+	getStringUUID ()Ljava/lang/String; m_20149_
+	getSwimHighSpeedSplashSound ()Lnet/minecraft/sounds/SoundEvent; m_5508_
+	getSwimSound ()Lnet/minecraft/sounds/SoundEvent; m_5501_
+	getSwimSplashSound ()Lnet/minecraft/sounds/SoundEvent; m_5509_
+	getTags ()Ljava/util/Set; m_19880_
+	getTeam ()Lnet/minecraft/world/scores/Team; m_5647_
+	getTeamColor ()I m_19876_
+	getTicksFrozen ()I m_146888_
+	getTicksRequiredToFreeze ()I m_146891_
+	getType ()Lnet/minecraft/world/entity/EntityType; m_6095_
+	getTypeName ()Lnet/minecraft/network/chat/Component; m_5677_
+	getUUID ()Ljava/util/UUID; m_20148_
+	getUpVector (F)Lnet/minecraft/world/phys/Vec3; m_20289_
+		0 p_20290_ p_20290_
+	getVehicle ()Lnet/minecraft/world/entity/Entity; m_20202_
+	getViewScale ()D m_20150_
+		static
+	getViewVector (F)Lnet/minecraft/world/phys/Vec3; m_20252_
+		0 p_20253_ p_20253_
+	getViewXRot (F)F m_5686_
+		0 p_20268_ p_20268_
+	getViewYRot (F)F m_5675_
+		0 p_20279_ p_20279_
+	getVisualRotationYInDegrees ()F m_213816_
+	getX ()D m_20185_
+	getX (D)D m_20165_
+		0 p_20166_ p_20166_
+	getXRot ()F m_146909_
+	getY ()D m_20186_
+	getY (D)D m_20227_
+		0 p_20228_ p_20228_
+	getYHeadRot ()F m_6080_
+	getYRot ()F m_146908_
+	getZ ()D m_20189_
+	getZ (D)D m_20246_
+		0 p_20247_ p_20247_
+	handleDamageEvent (Lnet/minecraft/world/damagesource/DamageSource;)V m_269138_
+		0 p_270704_ p_270704_
+	handleEntityEvent (B)V m_7822_
+		0 p_19882_ p_19882_
+	handleInsidePortal (Lnet/minecraft/core/BlockPos;)V m_20221_
+		0 p_20222_ p_20222_
+	handleNetherPortal ()V m_20157_
+	hasControllingPassenger ()Z m_217005_
+	hasCustomName ()Z m_8077_
+	hasExactlyOnePlayerPassenger ()Z m_146898_
+	hasGlowingTag ()Z m_146886_
+	hasIndirectPassenger (Lnet/minecraft/world/entity/Entity;)Z m_20367_
+		0 p_20368_ p_20368_
+	hasPassenger (Ljava/util/function/Predicate;)Z m_146862_
+		0 p_146863_ p_146863_
+	hasPassenger (Lnet/minecraft/world/entity/Entity;)Z m_20363_
+		0 p_20364_ p_20364_
+	hasPermissions (I)Z m_20310_
+		0 p_20311_ p_20311_
+	hasPose (Lnet/minecraft/world/entity/Pose;)Z m_217003_
+		0 p_217004_ p_217004_
+	hashCode ()I hashCode
+	hurt (Lnet/minecraft/world/damagesource/DamageSource;F)Z m_6469_
+		0 p_19946_ p_19946_
+		1 p_19947_ p_19947_
+	ignoreExplosion ()Z m_6128_
+	interact (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResult; m_6096_
+		0 p_19978_ p_19978_
+		1 p_19979_ p_19979_
+	interactAt (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResult; m_7111_
+		0 p_19980_ p_19980_
+		1 p_19981_ p_19981_
+		2 p_19982_ p_19982_
+	is (Lnet/minecraft/world/entity/Entity;)Z m_7306_
+		0 p_20356_ p_20356_
+	isAlive ()Z m_6084_
+	isAlliedTo (Lnet/minecraft/world/scores/Team;)Z m_20031_
+		0 p_20032_ p_20032_
+	isAlliedTo (Lnet/minecraft/world/entity/Entity;)Z m_7307_
+		0 p_20355_ p_20355_
+	isAlwaysTicking ()Z m_142389_
+	isAttackable ()Z m_6097_
+	isColliding (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Z m_20039_
+		0 p_20040_ p_20040_
+		1 p_20041_ p_20041_
+	isControlledByLocalInstance ()Z m_6109_
+	isCrouching ()Z m_6047_
+	isCurrentlyGlowing ()Z m_142038_
+	isCustomNameVisible ()Z m_20151_
+	isDescending ()Z m_20164_
+	isDiscrete ()Z m_20163_
+	isEffectiveAi ()Z m_21515_
+	isEyeInFluid (Lnet/minecraft/tags/TagKey;)Z m_204029_
+		0 p_204030_ p_204030_
+	isFlapping ()Z m_142039_
+	isFree (Lnet/minecraft/world/phys/AABB;)Z m_20131_
+		0 p_20132_ p_20132_
+	isFree (DDD)Z m_20229_
+		0 p_20230_ p_20230_
+		1 p_20231_ p_20231_
+		2 p_20232_ p_20232_
+	isFreezing ()Z m_203117_
+	isFullyFrozen ()Z m_146890_
+	isHorizontalCollisionMinor (Lnet/minecraft/world/phys/Vec3;)Z m_196406_
+		0 p_196625_ p_196625_
+	isIgnoringBlockTriggers ()Z m_6090_
+	isInBubbleColumn ()Z m_20305_
+	isInLava ()Z m_20077_
+	isInRain ()Z m_20285_
+	isInWall ()Z m_5830_
+	isInWater ()Z m_20069_
+	isInWaterOrBubble ()Z m_20072_
+	isInWaterOrRain ()Z m_20070_
+	isInWaterRainOrBubble ()Z m_20071_
+	isInvisible ()Z m_20145_
+	isInvisibleTo (Lnet/minecraft/world/entity/player/Player;)Z m_20177_
+		0 p_20178_ p_20178_
+	isInvulnerable ()Z m_20147_
+	isInvulnerableTo (Lnet/minecraft/world/damagesource/DamageSource;)Z m_6673_
+		0 p_20122_ p_20122_
+	isNoGravity ()Z m_20068_
+	isOnFire ()Z m_6060_
+	isOnPortalCooldown ()Z m_20092_
+	isOnRails ()Z m_288188_
+	isPassenger ()Z m_20159_
+	isPassengerOfSameVehicle (Lnet/minecraft/world/entity/Entity;)Z m_20365_
+		0 p_20366_ p_20366_
+	isPickable ()Z m_6087_
+	isPushable ()Z m_6094_
+	isPushedByFluid ()Z m_6063_
+	isRemoved ()Z m_213877_
+	isShiftKeyDown ()Z m_6144_
+	isSilent ()Z m_20067_
+	isSpectator ()Z m_5833_
+	isSprinting ()Z m_20142_
+	isStateClimbable (Lnet/minecraft/world/level/block/state/BlockState;)Z m_285776_
+		0 p_286733_ p_286733_
+	isSteppingCarefully ()Z m_20161_
+	isSupportedBy (Lnet/minecraft/core/BlockPos;)Z m_287201_
+		0 p_287613_ p_287613_
+	isSuppressingBounce ()Z m_20162_
+	isSwimming ()Z m_6069_
+	isUnderWater ()Z m_5842_
+	isVehicle ()Z m_20160_
+	isVisuallyCrawling ()Z m_20143_
+	isVisuallySwimming ()Z m_6067_
+	kill ()V m_6074_
+	killedEntity (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;)Z m_214076_
+		0 p_216988_ p_216988_
+		1 p_216989_ p_216989_
+	lambda$checkFallDamage$1 (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState; m_285720_
+		0 p_286200_ p_286200_
+	lambda$fillCrashReportCategory$10 ()Ljava/lang/String; m_146930_
+	lambda$fillCrashReportCategory$11 ()Ljava/lang/String; m_146929_
+	lambda$fillCrashReportCategory$8 ()Ljava/lang/String; m_185986_
+	lambda$fillCrashReportCategory$9 ()Ljava/lang/String; m_20333_
+	lambda$findDimensionEntryPoint$6 (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/BlockPos;)Z m_284013_
+		0 p_284699_ p_284699_
+		1 p_284700_ p_284700_
+	lambda$findDimensionEntryPoint$7 (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/BlockUtil$FoundRectangle;)Lnet/minecraft/world/level/portal/PortalInfo; m_257153_
+		0 p_258248_ p_258248_
+		1 p_258249_ p_258249_
+	lambda$getDisplayName$12 (Lnet/minecraft/network/chat/Style;)Lnet/minecraft/network/chat/Style; m_185974_
+		0 p_185975_ p_185975_
+	lambda$getIndirectPassengers$15 ()Ljava/util/Iterator; m_185985_
+	lambda$hasExactlyOnePlayerPassenger$16 (Lnet/minecraft/world/entity/Entity;)Z m_185942_
+		static
+		0 p_185943_ p_185943_
+	lambda$isInWall$2 (Lnet/minecraft/world/phys/AABB;Lnet/minecraft/core/BlockPos;)Z m_201940_
+		0 p_201941_ p_201941_
+		1 p_201942_ p_201942_
+	lambda$move$0 (Lnet/minecraft/world/level/block/state/BlockState;)Z m_20126_
+		static
+		0 p_20127_ p_20127_
+	lambda$refreshDimensions$14 (Lnet/minecraft/world/entity/EntityDimensions;Lnet/minecraft/world/phys/Vec3;)V m_185954_
+		0 p_185955_ p_185955_
+		1 p_185956_ p_185956_
+	lambda$removePassenger$5 (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/entity/Entity;)Z m_185978_
+		static
+		0 p_185979_ p_185979_
+		1 p_185980_ p_185980_
+	lambda$startRiding$3 (Lnet/minecraft/world/entity/Entity;)Z m_185983_
+		static
+		0 p_185984_ p_185984_
+	lambda$startRiding$4 (Lnet/minecraft/world/entity/Entity;)V m_185981_
+		static
+		0 p_185982_ p_185982_
+	lambda$teleportPassengers$13 (Lnet/minecraft/world/entity/Entity;)V m_185976_
+		static
+		0 p_185977_ p_185977_
+	lavaHurt ()V m_20093_
+	lerpHeadTo (FI)V m_6541_
+		0 p_19918_ p_19918_
+		1 p_19919_ p_19919_
+	lerpMotion (DDD)V m_6001_
+		0 p_20306_ p_20306_
+		1 p_20307_ p_20307_
+		2 p_20308_ p_20308_
+	lerpTo (DDDFFIZ)V m_6453_
+		0 p_19896_ p_19896_
+		1 p_19897_ p_19897_
+		2 p_19898_ p_19898_
+		3 p_19899_ p_19899_
+		4 p_19900_ p_19900_
+		5 p_19901_ p_19901_
+		6 p_19902_ p_19902_
+	level ()Lnet/minecraft/world/level/Level; m_9236_
+	limitPistonMovement (Lnet/minecraft/world/phys/Vec3;)Lnet/minecraft/world/phys/Vec3; m_20133_
+		0 p_20134_ p_20134_
+	load (Lnet/minecraft/nbt/CompoundTag;)V m_20258_
+		0 p_20259_ p_20259_
+	lookAt (Lnet/minecraft/commands/arguments/EntityAnchorArgument$Anchor;Lnet/minecraft/world/phys/Vec3;)V m_7618_
+		0 p_20033_ p_20033_
+		1 p_20034_ p_20034_
+	makeBoundingBox ()Lnet/minecraft/world/phys/AABB; m_142242_
+	makeStuckInBlock (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/phys/Vec3;)V m_7601_
+		0 p_20006_ p_20006_
+		1 p_20007_ p_20007_
+	markHurt ()V m_5834_
+	maxUpStep ()F m_274421_
+	mayInteract (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)Z m_142265_
+		0 p_146843_ p_146843_
+		1 p_146844_ p_146844_
+	maybeBackOffFromEdge (Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/entity/MoverType;)Lnet/minecraft/world/phys/Vec3; m_5763_
+		0 p_20019_ p_20019_
+		1 p_20020_ p_20020_
+	mirror (Lnet/minecraft/world/level/block/Mirror;)F m_6961_
+		0 p_20003_ p_20003_
+	move (Lnet/minecraft/world/entity/MoverType;Lnet/minecraft/world/phys/Vec3;)V m_6478_
+		0 p_19973_ p_19973_
+		1 p_19974_ p_19974_
+	moveRelative (FLnet/minecraft/world/phys/Vec3;)V m_19920_
+		0 p_19921_ p_19921_
+		1 p_19922_ p_19922_
+	moveTo (Lnet/minecraft/core/BlockPos;FF)V m_20035_
+		0 p_20036_ p_20036_
+		1 p_20037_ p_20037_
+		2 p_20038_ p_20038_
+	moveTo (DDDFF)V m_7678_
+		0 p_20108_ p_20108_
+		1 p_20109_ p_20109_
+		2 p_20110_ p_20110_
+		3 p_20111_ p_20111_
+		4 p_20112_ p_20112_
+	moveTo (Lnet/minecraft/world/phys/Vec3;)V m_20219_
+		0 p_20220_ p_20220_
+	moveTo (DDD)V m_6027_
+		0 p_20105_ p_20105_
+		1 p_20106_ p_20106_
+		2 p_20107_ p_20107_
+	moveTowardsClosestSpace (DDD)V m_20314_
+		0 p_20315_ p_20315_
+		1 p_20316_ p_20316_
+		2 p_20317_ p_20317_
+	newDoubleList ([D)Lnet/minecraft/nbt/ListTag; m_20063_
+		0 p_20064_ p_20064_
+	newFloatList ([F)Lnet/minecraft/nbt/ListTag; m_20065_
+		0 p_20066_ p_20066_
+	nextStep ()F m_6059_
+	onAboveBubbleCol (Z)V m_6845_
+		0 p_20313_ p_20313_
+	onBelowWorld ()V m_6088_
+	onClientRemoval ()V m_142036_
+	onFlap ()V m_142043_
+	onGround ()Z m_20096_
+	onInsideBlock (Lnet/minecraft/world/level/block/state/BlockState;)V m_6763_
+		0 p_20005_ p_20005_
+	onInsideBubbleColumn (Z)V m_20321_
+		0 p_20322_ p_20322_
+	onPassengerTurned (Lnet/minecraft/world/entity/Entity;)V m_7340_
+		0 p_20320_ p_20320_
+	onSyncedDataUpdated (Lnet/minecraft/network/syncher/EntityDataAccessor;)V m_7350_
+		0 p_20059_ p_20059_
+	onSyncedDataUpdated (Ljava/util/List;)V m_269505_
+		0 p_270372_ p_270372_
+	onlyOpCanSetNbt ()Z m_6127_
+	pick (DFZ)Lnet/minecraft/world/phys/HitResult; m_19907_
+		0 p_19908_ p_19908_
+		1 p_19909_ p_19909_
+		2 p_19910_ p_19910_
+	playAmethystStepSound ()V m_277116_
+	playCombinationStepSounds (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/state/BlockState;)V m_276961_
+		0 p_277472_ p_277472_
+		1 p_277630_ p_277630_
+	playEntityOnFireExtinguishedSound ()V m_146873_
+	playMuffledStepSound (Lnet/minecraft/world/level/block/state/BlockState;)V m_280568_
+		0 p_283110_ p_283110_
+	playSound (Lnet/minecraft/sounds/SoundEvent;)V m_216990_
+		0 p_216991_ p_216991_
+	playSound (Lnet/minecraft/sounds/SoundEvent;FF)V m_5496_
+		0 p_19938_ p_19938_
+		1 p_19939_ p_19939_
+		2 p_19940_ p_19940_
+	playStepSound (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)V m_7355_
+		0 p_20135_ p_20135_
+		1 p_20136_ p_20136_
+	playSwimSound (F)V m_5625_
+		0 p_20213_ p_20213_
+	playerTouch (Lnet/minecraft/world/entity/player/Player;)V m_6123_
+		0 p_20081_ p_20081_
+	position ()Lnet/minecraft/world/phys/Vec3; m_20182_
+	positionRider (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/entity/Entity$MoveFunction;)V m_19956_
+		0 p_19957_ p_19957_
+		1 p_19958_ p_19958_
+	positionRider (Lnet/minecraft/world/entity/Entity;)V m_7332_
+		0 p_20312_ p_20312_
+	processFlappingMovement ()V m_146874_
+	processPortalCooldown ()V m_8021_
+	push (DDD)V m_5997_
+		0 p_20286_ p_20286_
+		1 p_20287_ p_20287_
+		2 p_20288_ p_20288_
+	push (Lnet/minecraft/world/entity/Entity;)V m_7334_
+		0 p_20293_ p_20293_
+	readAdditionalSaveData (Lnet/minecraft/nbt/CompoundTag;)V m_7378_
+		0 p_20052_ p_20052_
+	reapplyPosition ()V m_20090_
+	recreateFromPacket (Lnet/minecraft/network/protocol/game/ClientboundAddEntityPacket;)V m_141965_
+		0 p_146866_ p_146866_
+	refreshDimensions ()V m_6210_
+	remove (Lnet/minecraft/world/entity/Entity$RemovalReason;)V m_142687_
+		0 p_146834_ p_146834_
+	removeAction (Lnet/minecraft/network/chat/Component;)Lnet/minecraft/network/chat/Component; m_20140_
+		static
+		0 p_20141_ p_20141_
+	removeAfterChangingDimensions ()V m_6089_
+	removePassenger (Lnet/minecraft/world/entity/Entity;)V m_20351_
+		0 p_20352_ p_20352_
+	removeTag (Ljava/lang/String;)Z m_20137_
+		0 p_20138_ p_20138_
+	removeVehicle ()V m_6038_
+	repositionEntityAfterLoad ()Z m_6093_
+	resetFallDistance ()V m_183634_
+	restoreFrom (Lnet/minecraft/world/entity/Entity;)V m_20361_
+		0 p_20362_ p_20362_
+	rideTick ()V m_6083_
+	rotate (Lnet/minecraft/world/level/block/Rotation;)F m_7890_
+		0 p_20004_ p_20004_
+	save (Lnet/minecraft/nbt/CompoundTag;)Z m_20223_
+		0 p_20224_ p_20224_
+	saveAsPassenger (Lnet/minecraft/nbt/CompoundTag;)Z m_20086_
+		0 p_20087_ p_20087_
+	saveWithoutId (Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/nbt/CompoundTag; m_20240_
+		0 p_20241_ p_20241_
+	sendSystemMessage (Lnet/minecraft/network/chat/Component;)V m_213846_
+		0 p_216998_ p_216998_
+	setAirSupply (I)V m_20301_
+		0 p_20302_ p_20302_
+	setBoundingBox (Lnet/minecraft/world/phys/AABB;)V m_20011_
+		0 p_20012_ p_20012_
+	setCustomName (Lnet/minecraft/network/chat/Component;)V m_6593_
+		0 p_20053_ p_20053_
+	setCustomNameVisible (Z)V m_20340_
+		0 p_20341_ p_20341_
+	setDeltaMovement (DDD)V m_20334_
+		0 p_20335_ p_20335_
+		1 p_20336_ p_20336_
+		2 p_20337_ p_20337_
+	setDeltaMovement (Lnet/minecraft/world/phys/Vec3;)V m_20256_
+		0 p_20257_ p_20257_
+	setGlowingTag (Z)V m_146915_
+		0 p_146916_ p_146916_
+	setId (I)V m_20234_
+		0 p_20235_ p_20235_
+	setInvisible (Z)V m_6842_
+		0 p_20304_ p_20304_
+	setInvulnerable (Z)V m_20331_
+		0 p_20332_ p_20332_
+	setIsInPowderSnow (Z)V m_146924_
+		0 p_146925_ p_146925_
+	setItemSlot (Lnet/minecraft/world/entity/EquipmentSlot;Lnet/minecraft/world/item/ItemStack;)V m_8061_
+		0 p_19968_ p_19968_
+		1 p_19969_ p_19969_
+	setLevel (Lnet/minecraft/world/level/Level;)V m_284535_
+		0 p_285201_ p_285201_
+	setLevelCallback (Lnet/minecraft/world/level/entity/EntityInLevelCallback;)V m_141960_
+		0 p_146849_ p_146849_
+	setMaxUpStep (F)V m_274367_
+		0 p_275672_ p_275672_
+	setNoGravity (Z)V m_20242_
+		0 p_20243_ p_20243_
+	setOldPosAndRot ()V m_146867_
+	setOnGround (Z)V m_6853_
+		0 p_20181_ p_20181_
+	setOnGroundWithKnownMovement (ZLnet/minecraft/world/phys/Vec3;)V m_289603_
+		0 p_289661_ p_289661_
+		1 p_289653_ p_289653_
+	setPortalCooldown ()V m_20091_
+	setPortalCooldown (I)V m_287199_
+		0 p_287760_ p_287760_
+	setPos (Lnet/minecraft/world/phys/Vec3;)V m_146884_
+		0 p_146885_ p_146885_
+	setPos (DDD)V m_6034_
+		0 p_20210_ p_20210_
+		1 p_20211_ p_20211_
+		2 p_20212_ p_20212_
+	setPosRaw (DDD)V m_20343_
+		0 p_20344_ p_20344_
+		1 p_20345_ p_20345_
+		2 p_20346_ p_20346_
+	setPose (Lnet/minecraft/world/entity/Pose;)V m_20124_
+		0 p_20125_ p_20125_
+	setRemainingFireTicks (I)V m_7311_
+		0 p_20269_ p_20269_
+	setRemoved (Lnet/minecraft/world/entity/Entity$RemovalReason;)V m_142467_
+		0 p_146876_ p_146876_
+	setRot (FF)V m_19915_
+		0 p_19916_ p_19916_
+		1 p_19917_ p_19917_
+	setSecondsOnFire (I)V m_20254_
+		0 p_20255_ p_20255_
+	setSharedFlag (IZ)V m_20115_
+		0 p_20116_ p_20116_
+		1 p_20117_ p_20117_
+	setSharedFlagOnFire (Z)V m_146868_
+		0 p_146869_ p_146869_
+	setShiftKeyDown (Z)V m_20260_
+		0 p_20261_ p_20261_
+	setSilent (Z)V m_20225_
+		0 p_20226_ p_20226_
+	setSprinting (Z)V m_6858_
+		0 p_20274_ p_20274_
+	setSwimming (Z)V m_20282_
+		0 p_20283_ p_20283_
+	setTicksFrozen (I)V m_146917_
+		0 p_146918_ p_146918_
+	setUUID (Ljava/util/UUID;)V m_20084_
+		0 p_20085_ p_20085_
+	setViewScale (D)V m_20103_
+		static
+		0 p_20104_ p_20104_
+	setXRot (F)V m_146926_
+		0 p_146927_ p_146927_
+	setYBodyRot (F)V m_5618_
+		0 p_20338_ p_20338_
+	setYHeadRot (F)V m_5616_
+		0 p_20328_ p_20328_
+	setYRot (F)V m_146922_
+		0 p_146923_ p_146923_
+	shouldBeSaved ()Z m_142391_
+	shouldBlockExplode (Lnet/minecraft/world/level/Explosion;Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;F)Z m_7349_
+		0 p_19987_ p_19987_
+		1 p_19988_ p_19988_
+		2 p_19989_ p_19989_
+		3 p_19990_ p_19990_
+		4 p_19991_ p_19991_
+	shouldInformAdmins ()Z m_6102_
+	shouldPlayAmethystStepSound (Lnet/minecraft/world/level/block/state/BlockState;)Z m_277063_
+		0 p_278069_ p_278069_
+	shouldRender (DDD)Z m_6000_
+		0 p_20296_ p_20296_
+		1 p_20297_ p_20297_
+		2 p_20298_ p_20298_
+	shouldRenderAtSqrDistance (D)Z m_6783_
+		0 p_19883_ p_19883_
+	shouldShowName ()Z m_6052_
+	showVehicleHealth ()Z m_20152_
+	skipAttackInteraction (Lnet/minecraft/world/entity/Entity;)Z m_7313_
+		0 p_20357_ p_20357_
+	spawnAtLocation (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/entity/item/ItemEntity; m_19983_
+		0 p_19984_ p_19984_
+	spawnAtLocation (Lnet/minecraft/world/item/ItemStack;F)Lnet/minecraft/world/entity/item/ItemEntity; m_5552_
+		0 p_19985_ p_19985_
+		1 p_19986_ p_19986_
+	spawnAtLocation (Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/entity/item/ItemEntity; m_19998_
+		0 p_19999_ p_19999_
+	spawnAtLocation (Lnet/minecraft/world/level/ItemLike;I)Lnet/minecraft/world/entity/item/ItemEntity; m_20000_
+		0 p_20001_ p_20001_
+		1 p_20002_ p_20002_
+	spawnSprintParticle ()V m_20076_
+	startRiding (Lnet/minecraft/world/entity/Entity;Z)Z m_7998_
+		0 p_19966_ p_19966_
+		1 p_19967_ p_19967_
+	startRiding (Lnet/minecraft/world/entity/Entity;)Z m_20329_
+		0 p_20330_ p_20330_
+	startSeenByPlayer (Lnet/minecraft/server/level/ServerPlayer;)V m_6457_
+		0 p_20119_ p_20119_
+	stopRiding ()V m_8127_
+	stopSeenByPlayer (Lnet/minecraft/server/level/ServerPlayer;)V m_6452_
+		0 p_20174_ p_20174_
+	syncPacketPositionCodec (DDD)V m_217006_
+		0 p_217007_ p_217007_
+		1 p_217008_ p_217008_
+		2 p_217009_ p_217009_
+	teleportPassengers ()V m_276804_
+	teleportRelative (DDD)V m_246847_
+		0 p_249341_ p_249341_
+		1 p_252229_ p_252229_
+		2 p_252038_ p_252038_
+	teleportTo (Lnet/minecraft/server/level/ServerLevel;DDDLjava/util/Set;FF)Z m_264318_
+		0 p_265257_ p_265257_
+		1 p_265407_ p_265407_
+		2 p_265727_ p_265727_
+		3 p_265410_ p_265410_
+		4 p_265083_ p_265083_
+		5 p_265573_ p_265573_
+		6 p_265094_ p_265094_
+	teleportTo (DDD)V m_6021_
+		0 p_19887_ p_19887_
+		1 p_19888_ p_19888_
+		2 p_19889_ p_19889_
+	teleportToWithTicket (DDD)V m_20324_
+		0 p_20325_ p_20325_
+		1 p_20326_ p_20326_
+		2 p_20327_ p_20327_
+	thunderHit (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LightningBolt;)V m_8038_
+		0 p_19927_ p_19927_
+		1 p_19928_ p_19928_
+	tick ()V m_8119_
+	toString ()Ljava/lang/String; toString
+	touchingUnloadedChunk ()Z m_146899_
+	trackingPosition ()Lnet/minecraft/world/phys/Vec3; m_213870_
+	tryCheckInsideBlocks ()V m_146872_
+	turn (DD)V m_19884_
+		0 p_19885_ p_19885_
+		1 p_19886_ p_19886_
+	unRide ()V m_19877_
+	unsetRemoved ()V m_146912_
+	updateDynamicGameEventListener (Ljava/util/function/BiConsumer;)V m_213651_
+		0 p_216996_ p_216996_
+	updateFluidHeightAndDoFluidPushing (Lnet/minecraft/tags/TagKey;D)Z m_204031_
+		0 p_204032_ p_204032_
+		1 p_204033_ p_204033_
+	updateFluidOnEyes ()V m_20323_
+	updateInWaterStateAndDoFluidPushing ()Z m_20073_
+	updateInWaterStateAndDoWaterCurrentPushing ()V m_20074_
+	updateSwimming ()V m_5844_
+	vibrationAndSoundEffectsFromBlock (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;ZZLnet/minecraft/world/phys/Vec3;)Z m_286065_
+		0 p_286221_ p_286221_
+		1 p_286549_ p_286549_
+		2 p_286708_ p_286708_
+		3 p_286543_ p_286543_
+		4 p_286448_ p_286448_
+	walkingStepSound (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)V m_280440_
+		0 p_281828_ p_281828_
+		1 p_282118_ p_282118_
+	waterSwimSound ()V m_280447_
+net/minecraft/world/entity/LivingEntity net/minecraft/world/entity/LivingEntity
+	ARMOR_SLOTS f_147167_
+	ARMOR_SLOT_OFFSET f_147169_
+	BASE_JUMP_POWER f_286963_
+	DAMAGE_SOURCE_TIMEOUT f_147178_
+	DATA_ARROW_COUNT_ID f_20940_
+	DATA_EFFECT_AMBIENCE_ID f_20963_
+	DATA_EFFECT_COLOR_ID f_20962_
+	DATA_HEALTH_ID f_20961_
+	DATA_LIVING_ENTITY_FLAGS f_20909_
+	DATA_STINGER_COUNT_ID f_20941_
+	DEATH_DURATION f_147174_
+	DEFAULT_BASE_GRAVITY f_147173_
+	DEFAULT_EYE_HEIGHT f_147164_
+	EQUIPMENT_SLOT_OFFSET f_147168_
+	EXTRA_RENDER_CULLING_SIZE_WITH_BIG_HAT f_147165_
+	FREE_FALL_EVENTS_PER_ELYTRA_BREAK f_147181_
+	HAND_SLOTS f_147166_
+	LIVING_ENTITY_FLAG_IS_USING f_147176_
+	LIVING_ENTITY_FLAG_OFF_HAND f_147177_
+	LIVING_ENTITY_FLAG_SPIN_ATTACK f_147163_
+	LOGGER f_201943_
+	MAX_HEAD_ROTATION_RELATIVE_TO_BODY f_271312_
+	MAX_LINE_OF_SIGHT_TEST_RANGE f_147182_
+	MIN_MOVEMENT_DISTANCE f_147172_
+	PLAYER_HURT_EXPERIENCE_TIME f_147171_
+	SLEEPING_DIMENSIONS f_20910_
+	SLEEPING_POS_ID f_20942_
+	SPEED_MODIFIER_POWDER_SNOW_UUID f_147184_
+	SPEED_MODIFIER_SOUL_SPEED_UUID f_20959_
+	SPEED_MODIFIER_SPRINTING f_20960_
+	SPEED_MODIFIER_SPRINTING_UUID f_20929_
+	SWING_DURATION f_147170_
+	TICKS_PER_ELYTRA_FREE_FALL_EVENT f_147180_
+	USE_ITEM_INTERVAL f_147175_
+	WAIT_TICKS_BEFORE_ITEM_USE_EFFECTS f_147179_
+	absorptionAmount f_20955_
+	activeEffects f_20945_
+	animStep f_20894_
+	animStepO f_20895_
+	attackAnim f_20921_
+	attackStrengthTicker f_20922_
+	attributes f_20943_
+	autoSpinAttackTicks f_20938_
+	brain f_20939_
+	combatTracker f_20944_
+	dead f_20890_
+	deathScore f_20897_
+	deathTime f_20919_
+	discardFriction f_147183_
+	effectsDirty f_20948_
+	fallFlyTicks f_20937_
+	hurtDuration f_20917_
+	hurtTime f_20916_
+	invulnerableDuration f_20926_
+	jumping f_20899_
+	lastArmorItemStacks f_20947_
+	lastClimbablePos f_20957_
+	lastDamageSource f_20958_
+	lastDamageStamp f_20930_
+	lastHandItemStacks f_20946_
+	lastHurt f_20898_
+	lastHurtByMob f_20949_
+	lastHurtByMobTimestamp f_20950_
+	lastHurtByPlayer f_20888_
+	lastHurtByPlayerTime f_20889_
+	lastHurtMob f_20951_
+	lastHurtMobTimestamp f_20952_
+	lastPos f_20956_
+	lerpHeadSteps f_20934_
+	lerpSteps f_20903_
+	lerpX f_20904_
+	lerpXRot f_20908_
+	lerpY f_20905_
+	lerpYRot f_20907_
+	lerpZ f_20906_
+	lyHeadRot f_20933_
+	noActionTime f_20891_
+	noJumpDelay f_20954_
+	oAttackAnim f_20920_
+	oRun f_20892_
+	removeArrowTime f_20914_
+	removeStingerTime f_20915_
+	rotA f_20928_
+	rotOffs f_20896_
+	run f_20893_
+	skipDropExperience f_217034_
+	speed f_20953_
+	swimAmount f_20931_
+	swimAmountO f_20932_
+	swingTime f_20913_
+	swinging f_20911_
+	swingingArm f_20912_
+	timeOffs f_20927_
+	useItem f_20935_
+	useItemRemaining f_20936_
+	walkAnimation f_267362_
+	xxa f_20900_
+	yBodyRot f_20883_
+	yBodyRotO f_20884_
+	yHeadRot f_20885_
+	yHeadRotO f_20886_
+	yya f_20901_
+	zza f_20902_
+	<clinit> ()V <clinit>
+		static
+	<init> (Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)V <init>
+		0 p_20966_ p_20966_
+		1 p_20967_ p_20967_
+	actuallyHurt (Lnet/minecraft/world/damagesource/DamageSource;F)V m_6475_
+		0 p_21240_ p_21240_
+		1 p_21241_ p_21241_
+	addAdditionalSaveData (Lnet/minecraft/nbt/CompoundTag;)V m_7380_
+		0 p_21145_ p_21145_
+	addEatEffect (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;)V m_21063_
+		0 p_21064_ p_21064_
+		1 p_21065_ p_21065_
+		2 p_21066_ p_21066_
+	addEffect (Lnet/minecraft/world/effect/MobEffectInstance;Lnet/minecraft/world/entity/Entity;)Z m_147207_
+		0 p_147208_ p_147208_
+		1 p_147209_ p_147209_
+	addEffect (Lnet/minecraft/world/effect/MobEffectInstance;)Z m_7292_
+		0 p_21165_ p_21165_
+	aiStep ()V m_8107_
+	animateHurt (F)V m_6053_
+		0 p_265265_ p_265265_
+	areAllEffectsAmbient (Ljava/util/Collection;)Z m_21179_
+		static
+		0 p_21180_ p_21180_
+	attackable ()Z m_5789_
+	baseTick ()V m_6075_
+	blockUsingShield (Lnet/minecraft/world/entity/LivingEntity;)V m_6728_
+		0 p_21200_ p_21200_
+	blockedByShield (Lnet/minecraft/world/entity/LivingEntity;)V m_6731_
+		0 p_21246_ p_21246_
+	brainProvider ()Lnet/minecraft/world/entity/ai/Brain$Provider; m_5490_
+	breakItem (Lnet/minecraft/world/item/ItemStack;)V m_21278_
+		0 p_21279_ p_21279_
+	broadcastBreakEvent (Lnet/minecraft/world/entity/EquipmentSlot;)V m_21166_
+		0 p_21167_ p_21167_
+	broadcastBreakEvent (Lnet/minecraft/world/InteractionHand;)V m_21190_
+		0 p_21191_ p_21191_
+	calculateEntityAnimation (Z)V m_267651_
+		0 p_268129_ p_268129_
+	calculateFallDamage (FF)I m_5639_
+		0 p_21237_ p_21237_
+		1 p_21238_ p_21238_
+	canAttack (Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/ai/targeting/TargetingConditions;)Z m_21040_
+		0 p_21041_ p_21041_
+		1 p_21042_ p_21042_
+	canAttack (Lnet/minecraft/world/entity/LivingEntity;)Z m_6779_
+		0 p_21171_ p_21171_
+	canAttackType (Lnet/minecraft/world/entity/EntityType;)Z m_6549_
+		0 p_21032_ p_21032_
+	canBeAffected (Lnet/minecraft/world/effect/MobEffectInstance;)Z m_7301_
+		0 p_21197_ p_21197_
+	canBeSeenAsEnemy ()Z m_142066_
+	canBeSeenByAnyone ()Z m_142065_
+	canBreatheUnderwater ()Z m_6040_
+	canChangeDimensions ()Z m_6072_
+	canDisableShield ()Z m_213824_
+	canFreeze ()Z m_142079_
+	canSpawnSoulSpeedParticle ()Z m_6039_
+	canStandOnFluid (Lnet/minecraft/world/level/material/FluidState;)Z m_203441_
+		0 p_204042_ p_204042_
+	canTakeItem (Lnet/minecraft/world/item/ItemStack;)Z m_7066_
+		0 p_21249_ p_21249_
+	causeFallDamage (FFLnet/minecraft/world/damagesource/DamageSource;)Z m_142535_
+		0 p_147187_ p_147187_
+		1 p_147188_ p_147188_
+		2 p_147189_ p_147189_
+	checkAutoSpinAttack (Lnet/minecraft/world/phys/AABB;Lnet/minecraft/world/phys/AABB;)V m_21071_
+		0 p_21072_ p_21072_
+		1 p_21073_ p_21073_
+	checkBedExists ()Z m_21334_
+	checkFallDamage (DZLnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/BlockPos;)V m_7840_
+		0 p_20990_ p_20990_
+		1 p_20991_ p_20991_
+		2 p_20992_ p_20992_
+		3 p_20993_ p_20993_
+	checkTotemDeathProtection (Lnet/minecraft/world/damagesource/DamageSource;)Z m_21262_
+		0 p_21263_ p_21263_
+	clearSleepingPos ()V m_21258_
+	collectEquipmentChanges ()Ljava/util/Map; m_21319_
+	completeUsingItem ()V m_8095_
+	createEquipmentSlotAccess (Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/EquipmentSlot;)Lnet/minecraft/world/entity/SlotAccess; m_147195_
+		static
+		0 p_147196_ p_147196_
+		1 p_147197_ p_147197_
+	createLivingAttributes ()Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder; m_21183_
+		static
+	createWitherRose (Lnet/minecraft/world/entity/LivingEntity;)V m_21268_
+		0 p_21269_ p_21269_
+	decreaseAirSupply (I)I m_7302_
+		0 p_21303_ p_21303_
+	defineSynchedData ()V m_8097_
+	detectEquipmentUpdates ()V m_21315_
+	die (Lnet/minecraft/world/damagesource/DamageSource;)V m_6667_
+		0 p_21014_ p_21014_
+	dismountVehicle (Lnet/minecraft/world/entity/Entity;)V m_21028_
+		0 p_21029_ p_21029_
+	doAutoAttackOnTouch (Lnet/minecraft/world/entity/LivingEntity;)V m_6727_
+		0 p_21277_ p_21277_
+	doHurtTarget (Lnet/minecraft/world/entity/Entity;)Z m_7327_
+		0 p_20970_ p_20970_
+	doPush (Lnet/minecraft/world/entity/Entity;)V m_7324_
+		0 p_20971_ p_20971_
+	doesEmitEquipEvent (Lnet/minecraft/world/entity/EquipmentSlot;)Z m_213772_
+		0 p_217035_ p_217035_
+	dropAllDeathLoot (Lnet/minecraft/world/damagesource/DamageSource;)V m_6668_
+		0 p_21192_ p_21192_
+	dropCustomDeathLoot (Lnet/minecraft/world/damagesource/DamageSource;IZ)V m_7472_
+		0 p_21018_ p_21018_
+		1 p_21019_ p_21019_
+		2 p_21020_ p_21020_
+	dropEquipment ()V m_5907_
+	dropExperience ()V m_21226_
+	dropFromLootTable (Lnet/minecraft/world/damagesource/DamageSource;Z)V m_7625_
+		0 p_21021_ p_21021_
+		1 p_21022_ p_21022_
+	eat (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/item/ItemStack; m_5584_
+		0 p_21067_ p_21067_
+		1 p_21068_ p_21068_
+	entityEventForEquipmentBreak (Lnet/minecraft/world/entity/EquipmentSlot;)B m_21266_
+		static
+		0 p_21267_ p_21267_
+	equipmentHasChanged (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)Z m_246525_
+		0 p_252265_ p_252265_
+		1 p_251043_ p_251043_
+	forceAddEffect (Lnet/minecraft/world/effect/MobEffectInstance;Lnet/minecraft/world/entity/Entity;)V m_147215_
+		0 p_147216_ p_147216_
+		1 p_147217_ p_147217_
+	getAbsorptionAmount ()F m_6103_
+	getActiveEffects ()Ljava/util/Collection; m_21220_
+	getActiveEffectsMap ()Ljava/util/Map; m_21221_
+	getArmorCoverPercentage ()F m_21207_
+	getArmorSlots ()Ljava/lang/Iterable; m_6168_
+	getArmorValue ()I m_21230_
+	getArrowCount ()I m_21234_
+	getAttackAnim (F)F m_21324_
+		0 p_21325_ p_21325_
+	getAttribute (Lnet/minecraft/world/entity/ai/attributes/Attribute;)Lnet/minecraft/world/entity/ai/attributes/AttributeInstance; m_21051_
+		0 p_21052_ p_21052_
+	getAttributeBaseValue (Lnet/minecraft/core/Holder;)D m_245892_
+		0 p_248605_ p_248605_
+	getAttributeBaseValue (Lnet/minecraft/world/entity/ai/attributes/Attribute;)D m_21172_
+		0 p_21173_ p_21173_
+	getAttributeValue (Lnet/minecraft/world/entity/ai/attributes/Attribute;)D m_21133_
+		0 p_21134_ p_21134_
+	getAttributeValue (Lnet/minecraft/core/Holder;)D m_246858_
+		0 p_251296_ p_251296_
+	getAttributes ()Lnet/minecraft/world/entity/ai/attributes/AttributeMap; m_21204_
+	getBedOrientation ()Lnet/minecraft/core/Direction; m_21259_
+	getBlockSpeedFactor ()F m_6041_
+	getBoundingBoxForCulling ()Lnet/minecraft/world/phys/AABB; m_6921_
+	getBrain ()Lnet/minecraft/world/entity/ai/Brain; m_6274_
+	getCombatTracker ()Lnet/minecraft/world/damagesource/CombatTracker; m_21231_
+	getCurrentSwingDuration ()I m_21304_
+	getDamageAfterArmorAbsorb (Lnet/minecraft/world/damagesource/DamageSource;F)F m_21161_
+		0 p_21162_ p_21162_
+		1 p_21163_ p_21163_
+	getDamageAfterMagicAbsorb (Lnet/minecraft/world/damagesource/DamageSource;F)F m_6515_
+		0 p_21193_ p_21193_
+		1 p_21194_ p_21194_
+	getDeathSound ()Lnet/minecraft/sounds/SoundEvent; m_5592_
+	getDimensions (Lnet/minecraft/world/entity/Pose;)Lnet/minecraft/world/entity/EntityDimensions; m_6972_
+		0 p_21047_ p_21047_
+	getDismountPoses ()Lcom/google/common/collect/ImmutableList; m_7431_
+	getDrinkingSound (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/sounds/SoundEvent; m_7838_
+		0 p_21174_ p_21174_
+	getEatingSound (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/sounds/SoundEvent; m_7866_
+		0 p_21202_ p_21202_
+	getEffect (Lnet/minecraft/world/effect/MobEffect;)Lnet/minecraft/world/effect/MobEffectInstance; m_21124_
+		0 p_21125_ p_21125_
+	getEquipmentSlot (I)Lnet/minecraft/world/entity/EquipmentSlot; m_147211_
+		static
+		0 p_147212_ p_147212_
+	getEquipmentSlotForItem (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/entity/EquipmentSlot; m_147233_
+		static
+		0 p_147234_ p_147234_
+	getExperienceReward ()I m_213860_
+	getEyeHeight (Lnet/minecraft/world/entity/Pose;Lnet/minecraft/world/entity/EntityDimensions;)F m_6380_
+		0 p_21049_ p_21049_
+		1 p_21050_ p_21050_
+	getFallDamageSound (I)Lnet/minecraft/sounds/SoundEvent; m_5896_
+		0 p_21313_ p_21313_
+	getFallFlyingTicks ()I m_21256_
+	getFallSounds ()Lnet/minecraft/world/entity/LivingEntity$Fallsounds; m_196493_
+	getFluidFallingAdjustedMovement (DZLnet/minecraft/world/phys/Vec3;)Lnet/minecraft/world/phys/Vec3; m_20994_
+		0 p_20995_ p_20995_
+		1 p_20996_ p_20996_
+		2 p_20997_ p_20997_
+	getFlyingSpeed ()F m_274460_
+	getFrictionInfluencedSpeed (F)F m_21330_
+		0 p_21331_ p_21331_
+	getHealth ()F m_21223_
+	getHurtDir ()F m_264297_
+	getHurtSound (Lnet/minecraft/world/damagesource/DamageSource;)Lnet/minecraft/sounds/SoundEvent; m_7975_
+		0 p_21239_ p_21239_
+	getItemBySlot (Lnet/minecraft/world/entity/EquipmentSlot;)Lnet/minecraft/world/item/ItemStack; m_6844_
+		0 p_21127_ p_21127_
+	getItemInHand (Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack; m_21120_
+		0 p_21121_ p_21121_
+	getJumpBoostPower ()F m_285755_
+	getJumpPower ()F m_6118_
+	getKillCredit ()Lnet/minecraft/world/entity/LivingEntity; m_21232_
+	getLastArmorItem (Lnet/minecraft/world/entity/EquipmentSlot;)Lnet/minecraft/world/item/ItemStack; m_21198_
+		0 p_21199_ p_21199_
+	getLastAttacker ()Lnet/minecraft/world/entity/LivingEntity; m_271686_
+	getLastClimbablePos ()Ljava/util/Optional; m_21227_
+	getLastDamageSource ()Lnet/minecraft/world/damagesource/DamageSource; m_21225_
+	getLastHandItem (Lnet/minecraft/world/entity/EquipmentSlot;)Lnet/minecraft/world/item/ItemStack; m_21244_
+		0 p_21245_ p_21245_
+	getLastHurtByMob ()Lnet/minecraft/world/entity/LivingEntity; m_21188_
+	getLastHurtByMobTimestamp ()I m_21213_
+	getLastHurtMob ()Lnet/minecraft/world/entity/LivingEntity; m_21214_
+	getLastHurtMobTimestamp ()I m_21215_
+	getLocalBoundsForPose (Lnet/minecraft/world/entity/Pose;)Lnet/minecraft/world/phys/AABB; m_21270_
+		0 p_21271_ p_21271_
+	getLootTable ()Lnet/minecraft/resources/ResourceLocation; m_5743_
+	getLootTableSeed ()J m_287233_
+	getMainArm ()Lnet/minecraft/world/entity/HumanoidArm; m_5737_
+	getMainHandItem ()Lnet/minecraft/world/item/ItemStack; m_21205_
+	getMaxHealth ()F m_21233_
+	getMeleeAttackReferencePosition ()Lnet/minecraft/world/phys/Vec3; m_262803_
+	getMobType ()Lnet/minecraft/world/entity/MobType; m_6336_
+	getNoActionTime ()I m_21216_
+	getOffhandItem ()Lnet/minecraft/world/item/ItemStack; m_21206_
+	getProjectile (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/item/ItemStack; m_6298_
+		0 p_21272_ p_21272_
+	getRandom ()Lnet/minecraft/util/RandomSource; m_217043_
+	getRelativePortalPosition (Lnet/minecraft/core/Direction$Axis;Lnet/minecraft/BlockUtil$FoundRectangle;)Lnet/minecraft/world/phys/Vec3; m_7643_
+		0 p_21085_ p_21085_
+		1 p_21086_ p_21086_
+	getRiddenInput (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/phys/Vec3;)Lnet/minecraft/world/phys/Vec3; m_274312_
+		0 p_278326_ p_278326_
+		1 p_275300_ p_275300_
+	getRiddenSpeed (Lnet/minecraft/world/entity/player/Player;)F m_245547_
+		0 p_278286_ p_278286_
+	getScale ()F m_6134_
+	getSleepingPos ()Ljava/util/Optional; m_21257_
+	getSlot (I)Lnet/minecraft/world/entity/SlotAccess; m_141942_
+		0 p_147238_ p_147238_
+	getSoundVolume ()F m_6121_
+	getSpeed ()F m_6113_
+	getStandingEyeHeight (Lnet/minecraft/world/entity/Pose;Lnet/minecraft/world/entity/EntityDimensions;)F m_6431_
+		0 p_21131_ p_21131_
+		1 p_21132_ p_21132_
+	getStingerCount ()I m_21235_
+	getSwimAmount (F)F m_20998_
+		0 p_20999_ p_20999_
+	getTicksUsingItem ()I m_21252_
+	getUseItem ()Lnet/minecraft/world/item/ItemStack; m_21211_
+	getUseItemRemainingTicks ()I m_21212_
+	getUsedItemHand ()Lnet/minecraft/world/InteractionHand; m_7655_
+	getViewYRot (F)F m_5675_
+		0 p_21286_ p_21286_
+	getVisibilityPercent (Lnet/minecraft/world/entity/Entity;)D m_20968_
+		0 p_20969_ p_20969_
+	getVisualRotationYInDegrees ()F m_213816_
+	getVoicePitch ()F m_6100_
+	getWaterSlowDown ()F m_6108_
+	getYHeadRot ()F m_6080_
+	goDownInWater ()V m_21208_
+	handleDamageEvent (Lnet/minecraft/world/damagesource/DamageSource;)V m_269138_
+		0 p_270229_ p_270229_
+	handleEntityEvent (B)V m_7822_
+		0 p_20975_ p_20975_
+	handleEquipmentChanges (Ljava/util/Map;)V m_21142_
+		0 p_21143_ p_21143_
+	handleHandSwap (Ljava/util/Map;)V m_21091_
+		0 p_21092_ p_21092_
+	handleOnClimbable (Lnet/minecraft/world/phys/Vec3;)Lnet/minecraft/world/phys/Vec3; m_21297_
+		0 p_21298_ p_21298_
+	handleRelativeFrictionAndCalculateMovement (Lnet/minecraft/world/phys/Vec3;F)Lnet/minecraft/world/phys/Vec3; m_21074_
+		0 p_21075_ p_21075_
+		1 p_21076_ p_21076_
+	hasEffect (Lnet/minecraft/world/effect/MobEffect;)Z m_21023_
+		0 p_21024_ p_21024_
+	hasItemInSlot (Lnet/minecraft/world/entity/EquipmentSlot;)Z m_21033_
+		0 p_21034_ p_21034_
+	hasLineOfSight (Lnet/minecraft/world/entity/Entity;)Z m_142582_
+		0 p_147185_ p_147185_
+	heal (F)V m_5634_
+		0 p_21116_ p_21116_
+	hurt (Lnet/minecraft/world/damagesource/DamageSource;F)Z m_6469_
+		0 p_21016_ p_21016_
+		1 p_21017_ p_21017_
+	hurtArmor (Lnet/minecraft/world/damagesource/DamageSource;F)V m_6472_
+		0 p_21122_ p_21122_
+		1 p_21123_ p_21123_
+	hurtCurrentlyUsedShield (F)V m_7909_
+		0 p_21316_ p_21316_
+	hurtHelmet (Lnet/minecraft/world/damagesource/DamageSource;F)V m_142642_
+		0 p_147213_ p_147213_
+		1 p_147214_ p_147214_
+	increaseAirSupply (I)I m_7305_
+		0 p_21307_ p_21307_
+	indicateDamage (DD)V m_269405_
+		0 p_270514_ p_270514_
+		1 p_270826_ p_270826_
+	isAffectedByFluids ()Z m_6129_
+	isAffectedByPotions ()Z m_5801_
+	isAlive ()Z m_6084_
+	isAlwaysExperienceDropper ()Z m_6124_
+	isAutoSpinAttack ()Z m_21209_
+	isBaby ()Z m_6162_
+	isBlocking ()Z m_21254_
+	isCurrentlyGlowing ()Z m_142038_
+	isDamageSourceBlocked (Lnet/minecraft/world/damagesource/DamageSource;)Z m_21275_
+		0 p_21276_ p_21276_
+	isDeadOrDying ()Z m_21224_
+	isFallFlying ()Z m_21255_
+	isHolding (Lnet/minecraft/world/item/Item;)Z m_21055_
+		0 p_21056_ p_21056_
+	isHolding (Ljava/util/function/Predicate;)Z m_21093_
+		0 p_21094_ p_21094_
+	isImmobile ()Z m_6107_
+	isInWall ()Z m_5830_
+	isInvertedHealAndHarm ()Z m_21222_
+	isPickable ()Z m_6087_
+	isPushable ()Z m_6094_
+	isSensitiveToWater ()Z m_6126_
+	isSleeping ()Z m_5803_
+	isSuppressingSlidingDownLadder ()Z m_5791_
+	isUsingItem ()Z m_6117_
+	isVisuallySwimming ()Z m_6067_
+	jumpFromGround ()V m_6135_
+	jumpInLiquid (Lnet/minecraft/tags/TagKey;)V m_203347_
+		0 p_204043_ p_204043_
+	kill ()V m_6074_
+	knockback (DDD)V m_147240_
+		0 p_147241_ p_147241_
+		1 p_147242_ p_147242_
+		2 p_147243_ p_147243_
+	lambda$addAdditionalSaveData$1 (Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/core/BlockPos;)V m_21097_
+		static
+		0 p_21098_ p_21098_
+		1 p_21099_ p_21099_
+	lambda$addAdditionalSaveData$2 (Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/nbt/Tag;)V m_21100_
+		static
+		0 p_21101_ p_21101_
+		1 p_21102_ p_21102_
+	lambda$checkBedExists$7 (Lnet/minecraft/core/BlockPos;)Ljava/lang/Boolean; m_289088_
+		0 p_289310_ p_289310_
+	lambda$createEquipmentSlotAccess$10 (Lnet/minecraft/world/entity/EquipmentSlot;Lnet/minecraft/world/item/ItemStack;)Z m_268865_
+		static
+		0 p_269790_ p_269790_
+		1 p_269791_ p_269791_
+	lambda$handleEquipmentChanges$5 (Ljava/util/List;Lnet/minecraft/world/entity/EquipmentSlot;Lnet/minecraft/world/item/ItemStack;)V m_147202_
+		0 p_147203_ p_147203_
+		1 p_147204_ p_147204_
+		2 p_147205_ p_147205_
+	lambda$isHolding$4 (Lnet/minecraft/world/item/Item;Lnet/minecraft/world/item/ItemStack;)Z m_147198_
+		static
+		0 p_147199_ p_147199_
+		1 p_147200_ p_147200_
+	lambda$stopSleeping$8 (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/phys/Vec3; m_147229_
+		static
+		0 p_147230_ p_147230_
+	lambda$stopSleeping$9 (Lnet/minecraft/core/BlockPos;)V m_260785_
+		0 p_261435_ p_261435_
+	lambda$tickEffects$3 (Lnet/minecraft/world/effect/MobEffectInstance;)V m_21264_
+		0 p_21265_ p_21265_
+	lambda$tryAddSoulSpeed$0 (Lnet/minecraft/world/entity/LivingEntity;)V m_21300_
+		static
+		0 p_21301_ p_21301_
+	lambda$updateFallFlying$6 (Lnet/minecraft/world/entity/LivingEntity;)V m_147231_
+		static
+		0 p_147232_ p_147232_
+	lerpHeadTo (FI)V m_6541_
+		0 p_21005_ p_21005_
+		1 p_21006_ p_21006_
+	lerpTo (DDDFFIZ)V m_6453_
+		0 p_20977_ p_20977_
+		1 p_20978_ p_20978_
+		2 p_20979_ p_20979_
+		3 p_20980_ p_20980_
+		4 p_20981_ p_20981_
+		5 p_20982_ p_20982_
+		6 p_20983_ p_20983_
+	lookAt (Lnet/minecraft/commands/arguments/EntityAnchorArgument$Anchor;Lnet/minecraft/world/phys/Vec3;)V m_7618_
+		0 p_21078_ p_21078_
+		1 p_21079_ p_21079_
+	makeBrain (Lcom/mojang/serialization/Dynamic;)Lnet/minecraft/world/entity/ai/Brain; m_8075_
+		0 p_21069_ p_21069_
+	makePoofParticles ()V m_147246_
+	maxUpStep ()F m_274421_
+	onBelowWorld ()V m_6088_
+	onChangedBlock (Lnet/minecraft/core/BlockPos;)V m_5806_
+		0 p_21175_ p_21175_
+	onClimbable ()Z m_6147_
+	onEffectAdded (Lnet/minecraft/world/effect/MobEffectInstance;Lnet/minecraft/world/entity/Entity;)V m_142540_
+		0 p_147190_ p_147190_
+		1 p_147191_ p_147191_
+	onEffectRemoved (Lnet/minecraft/world/effect/MobEffectInstance;)V m_7285_
+		0 p_21126_ p_21126_
+	onEffectUpdated (Lnet/minecraft/world/effect/MobEffectInstance;ZLnet/minecraft/world/entity/Entity;)V m_141973_
+		0 p_147192_ p_147192_
+		1 p_147193_ p_147193_
+		2 p_147194_ p_147194_
+	onEnterCombat ()V m_8108_
+	onEquipItem (Lnet/minecraft/world/entity/EquipmentSlot;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)V m_238392_
+		0 p_238393_ p_238393_
+		1 p_238394_ p_238394_
+		2 p_238395_ p_238395_
+	onItemPickup (Lnet/minecraft/world/entity/item/ItemEntity;)V m_21053_
+		0 p_21054_ p_21054_
+	onLeaveCombat ()V m_8098_
+	onSoulSpeedBlock ()Z m_6046_
+	onSyncedDataUpdated (Lnet/minecraft/network/syncher/EntityDataAccessor;)V m_7350_
+		0 p_21104_ p_21104_
+	playBlockFallSound ()V m_21229_
+	playHurtSound (Lnet/minecraft/world/damagesource/DamageSource;)V m_6677_
+		0 p_21160_ p_21160_
+	push (Lnet/minecraft/world/entity/Entity;)V m_7334_
+		0 p_21294_ p_21294_
+	pushEntities ()V m_6138_
+	randomTeleport (DDDZ)Z m_20984_
+		0 p_20985_ p_20985_
+		1 p_20986_ p_20986_
+		2 p_20987_ p_20987_
+		3 p_20988_ p_20988_
+	readAdditionalSaveData (Lnet/minecraft/nbt/CompoundTag;)V m_7378_
+		0 p_21096_ p_21096_
+	recreateFromPacket (Lnet/minecraft/network/protocol/game/ClientboundAddEntityPacket;)V m_141965_
+		0 p_217037_ p_217037_
+	releaseUsingItem ()V m_21253_
+	remove (Lnet/minecraft/world/entity/Entity$RemovalReason;)V m_142687_
+		0 p_276115_ p_276115_
+	removeAllEffects ()Z m_21219_
+	removeEffect (Lnet/minecraft/world/effect/MobEffect;)Z m_21195_
+		0 p_21196_ p_21196_
+	removeEffectNoUpdate (Lnet/minecraft/world/effect/MobEffect;)Lnet/minecraft/world/effect/MobEffectInstance; m_6234_
+		0 p_21164_ p_21164_
+	removeEffectParticles ()V m_21218_
+	removeFrost ()V m_147225_
+	removeSoulSpeed ()V m_21185_
+	resetForwardDirectionOfRelativePortalPosition (Lnet/minecraft/world/phys/Vec3;)Lnet/minecraft/world/phys/Vec3; m_21289_
+		static
+		0 p_21290_ p_21290_
+	rideTick ()V m_6083_
+	sendEffectToPassengers (Lnet/minecraft/world/effect/MobEffectInstance;)V m_289605_
+		0 p_289695_ p_289695_
+	serverAiStep ()V m_6140_
+	setAbsorptionAmount (F)V m_7911_
+		0 p_21328_ p_21328_
+	setArrowCount (I)V m_21317_
+		0 p_21318_ p_21318_
+	setDiscardFriction (Z)V m_147244_
+		0 p_147245_ p_147245_
+	setHealth (F)V m_21153_
+		0 p_21154_ p_21154_
+	setItemInHand (Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/item/ItemStack;)V m_21008_
+		0 p_21009_ p_21009_
+		1 p_21010_ p_21010_
+	setItemSlot (Lnet/minecraft/world/entity/EquipmentSlot;Lnet/minecraft/world/item/ItemStack;)V m_8061_
+		0 p_21036_ p_21036_
+		1 p_21037_ p_21037_
+	setJumping (Z)V m_6862_
+		0 p_21314_ p_21314_
+	setLastArmorItem (Lnet/minecraft/world/entity/EquipmentSlot;Lnet/minecraft/world/item/ItemStack;)V m_21128_
+		0 p_21129_ p_21129_
+		1 p_21130_ p_21130_
+	setLastHandItem (Lnet/minecraft/world/entity/EquipmentSlot;Lnet/minecraft/world/item/ItemStack;)V m_21168_
+		0 p_21169_ p_21169_
+		1 p_21170_ p_21170_
+	setLastHurtByMob (Lnet/minecraft/world/entity/LivingEntity;)V m_6703_
+		0 p_21039_ p_21039_
+	setLastHurtByPlayer (Lnet/minecraft/world/entity/player/Player;)V m_6598_
+		0 p_21248_ p_21248_
+	setLastHurtMob (Lnet/minecraft/world/entity/Entity;)V m_21335_
+		0 p_21336_ p_21336_
+	setLivingEntityFlag (IZ)V m_21155_
+		0 p_21156_ p_21156_
+		1 p_21157_ p_21157_
+	setNoActionTime (I)V m_21310_
+		0 p_21311_ p_21311_
+	setPosToBed (Lnet/minecraft/core/BlockPos;)V m_21080_
+		0 p_21081_ p_21081_
+	setRecordPlayingNearby (Lnet/minecraft/core/BlockPos;Z)V m_6818_
+		0 p_21082_ p_21082_
+		1 p_21083_ p_21083_
+	setSleepingPos (Lnet/minecraft/core/BlockPos;)V m_21250_
+		0 p_21251_ p_21251_
+	setSpeed (F)V m_7910_
+		0 p_21320_ p_21320_
+	setSprinting (Z)V m_6858_
+		0 p_21284_ p_21284_
+	setStingerCount (I)V m_21321_
+		0 p_21322_ p_21322_
+	setYBodyRot (F)V m_5618_
+		0 p_21309_ p_21309_
+	setYHeadRot (F)V m_5616_
+		0 p_21306_ p_21306_
+	shouldDiscardFriction ()Z m_147223_
+	shouldDropExperience ()Z m_6149_
+	shouldDropLoot ()Z m_6125_
+	shouldRemoveSoulSpeed (Lnet/minecraft/world/level/block/state/BlockState;)Z m_6757_
+		0 p_21140_ p_21140_
+	shouldShowName ()Z m_6052_
+	shouldTriggerItemUseEffects ()Z m_21332_
+	skipDropExperience ()V m_217045_
+	spawnItemParticles (Lnet/minecraft/world/item/ItemStack;I)V m_21060_
+		0 p_21061_ p_21061_
+		1 p_21062_ p_21062_
+	spawnSoulSpeedParticle ()V m_21184_
+	startSleeping (Lnet/minecraft/core/BlockPos;)V m_5802_
+		0 p_21141_ p_21141_
+	startUsingItem (Lnet/minecraft/world/InteractionHand;)V m_6672_
+		0 p_21159_ p_21159_
+	stopRiding ()V m_8127_
+	stopSleeping ()V m_5796_
+	stopUsingItem ()V m_5810_
+	swapHandItems ()V m_21312_
+	swing (Lnet/minecraft/world/InteractionHand;Z)V m_21011_
+		0 p_21012_ p_21012_
+		1 p_21013_ p_21013_
+	swing (Lnet/minecraft/world/InteractionHand;)V m_6674_
+		0 p_21007_ p_21007_
+	take (Lnet/minecraft/world/entity/Entity;I)V m_7938_
+		0 p_21030_ p_21030_
+		1 p_21031_ p_21031_
+	tick ()V m_8119_
+	tickDeath ()V m_6153_
+	tickEffects ()V m_21217_
+	tickHeadTurn (FF)F m_5632_
+		0 p_21260_ p_21260_
+		1 p_21261_ p_21261_
+	tickRidden (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/phys/Vec3;)V m_274498_
+		0 p_278262_ p_278262_
+		1 p_275242_ p_275242_
+	trapdoorUsableAsLadder (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Z m_21176_
+		0 p_21177_ p_21177_
+		1 p_21178_ p_21178_
+	travel (Lnet/minecraft/world/phys/Vec3;)V m_7023_
+		0 p_21280_ p_21280_
+	travelRidden (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/phys/Vec3;)V m_274466_
+		0 p_278244_ p_278244_
+		1 p_278231_ p_278231_
+	triggerItemUseEffects (Lnet/minecraft/world/item/ItemStack;I)V m_21137_
+		0 p_21138_ p_21138_
+		1 p_21139_ p_21139_
+	tryAddFrost ()V m_147226_
+	tryAddSoulSpeed ()V m_21186_
+	updateEffectVisibility ()V m_21210_
+	updateFallFlying ()V m_21323_
+	updateGlowingStatus ()V m_147239_
+	updateInvisibilityStatus ()V m_8034_
+	updateSwimAmount ()V m_21333_
+	updateSwingTime ()V m_21203_
+	updateUsingItem (Lnet/minecraft/world/item/ItemStack;)V m_142106_
+		0 p_147201_ p_147201_
+	updateWalkAnimation (F)V m_267689_
+		0 p_268283_ p_268283_
+	updatingUsingItem ()V m_21329_
+	verifyEquippedItem (Lnet/minecraft/world/item/ItemStack;)V m_181122_
+		0 p_181123_ p_181123_
+	wasExperienceConsumed ()Z m_217046_
+net/minecraft/world/entity/Mob net/minecraft/world/entity/Mob
+	DATA_MOB_FLAGS_ID f_21340_
+	DEFAULT_EQUIPMENT_DROP_CHANCE f_182333_
+	ITEM_PICKUP_REACH f_217048_
+	LEASH_TAG f_147264_
+	MAX_ENCHANTED_ARMOR_CHANCE f_147262_
+	MAX_ENCHANTED_WEAPON_CHANCE f_147263_
+	MAX_PICKUP_LOOT_CHANCE f_147261_
+	MAX_WEARING_ARMOR_CHANCE f_147269_
+	MOB_FLAG_AGGRESSIVE f_147268_
+	MOB_FLAG_LEFTHANDED f_147267_
+	MOB_FLAG_NO_AI f_147266_
+	PICKUP_REACH f_147265_
+	PRESERVE_ITEM_DROP_CHANCE f_217047_
+	UPDATE_GOAL_SELECTOR_EVERY_N_TICKS f_186008_
+	ambientSoundTime f_21363_
+	armorDropChances f_21348_
+	armorItems f_21351_
+	bodyRotationControl f_21361_
+	canPickUpLoot f_21352_
+	delayedLeashHolderId f_21358_
+	goalSelector f_21345_
+	handDropChances f_21347_
+	handItems f_21350_
+	jumpControl f_21343_
+	leashHolder f_21357_
+	leashInfoTag f_21359_
+	lookControl f_21365_
+	lootTable f_21355_
+	lootTableSeed f_21356_
+	moveControl f_21342_
+	navigation f_21344_
+	pathfindingMalus f_21354_
+	persistenceRequired f_21353_
+	restrictCenter f_21360_
+	restrictRadius f_21341_
+	sensing f_21349_
+	target f_21362_
+	targetSelector f_21346_
+	xpReward f_21364_
+	<clinit> ()V <clinit>
+		static
+	<init> (Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)V <init>
+		0 p_21368_ p_21368_
+		1 p_21369_ p_21369_
+	addAdditionalSaveData (Lnet/minecraft/nbt/CompoundTag;)V m_7380_
+		0 p_21484_ p_21484_
+	aiStep ()V m_8107_
+	ate ()V m_8035_
+	baseTick ()V m_6075_
+	canAttackType (Lnet/minecraft/world/entity/EntityType;)Z m_6549_
+		0 p_21399_ p_21399_
+	canBeLeashed (Lnet/minecraft/world/entity/player/Player;)Z m_6573_
+		0 p_21418_ p_21418_
+	canFireProjectileWeapon (Lnet/minecraft/world/item/ProjectileWeaponItem;)Z m_5886_
+		0 p_21430_ p_21430_
+	canHoldItem (Lnet/minecraft/world/item/ItemStack;)Z m_7252_
+		0 p_21545_ p_21545_
+	canPickUpLoot ()Z m_21531_
+	canReplaceCurrentItem (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)Z m_7808_
+		0 p_21428_ p_21428_
+		1 p_21429_ p_21429_
+	canReplaceEqualItem (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)Z m_21477_
+		0 p_21478_ p_21478_
+		1 p_21479_ p_21479_
+	canTakeItem (Lnet/minecraft/world/item/ItemStack;)Z m_7066_
+		0 p_21522_ p_21522_
+	checkAndHandleImportantInteractions (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResult; m_21499_
+		0 p_21500_ p_21500_
+		1 p_21501_ p_21501_
+	checkDespawn ()V m_6043_
+	checkMobSpawnRules (Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/world/entity/MobSpawnType;Lnet/minecraft/core/BlockPos;Lnet/minecraft/util/RandomSource;)Z m_217057_
+		static
+		0 p_217058_ p_217058_
+		1 p_217059_ p_217059_
+		2 p_217060_ p_217060_
+		3 p_217061_ p_217061_
+		4 p_217062_ p_217062_
+	checkSpawnObstruction (Lnet/minecraft/world/level/LevelReader;)Z m_6914_
+		0 p_21433_ p_21433_
+	checkSpawnRules (Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/world/entity/MobSpawnType;)Z m_5545_
+		0 p_21431_ p_21431_
+		1 p_21432_ p_21432_
+	clearRestriction ()V m_147271_
+	convertTo (Lnet/minecraft/world/entity/EntityType;Z)Lnet/minecraft/world/entity/Mob; m_21406_
+		0 p_21407_ p_21407_
+		1 p_21408_ p_21408_
+	createBodyControl ()Lnet/minecraft/world/entity/ai/control/BodyRotationControl; m_7560_
+	createMobAttributes ()Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder; m_21552_
+		static
+	createNavigation (Lnet/minecraft/world/level/Level;)Lnet/minecraft/world/entity/ai/navigation/PathNavigation; m_6037_
+		0 p_21480_ p_21480_
+	customServerAiStep ()V m_8024_
+	defineSynchedData ()V m_8097_
+	doHurtTarget (Lnet/minecraft/world/entity/Entity;)Z m_7327_
+		0 p_21372_ p_21372_
+	dropCustomDeathLoot (Lnet/minecraft/world/damagesource/DamageSource;IZ)V m_7472_
+		0 p_21385_ p_21385_
+		1 p_21386_ p_21386_
+		2 p_21387_ p_21387_
+	dropFromLootTable (Lnet/minecraft/world/damagesource/DamageSource;Z)V m_7625_
+		0 p_21389_ p_21389_
+		1 p_21390_ p_21390_
+	dropLeash (ZZ)V m_21455_
+		0 p_21456_ p_21456_
+		1 p_21457_ p_21457_
+	enchantSpawnedArmor (Lnet/minecraft/util/RandomSource;FLnet/minecraft/world/entity/EquipmentSlot;)V m_217051_
+		0 p_217052_ p_217052_
+		1 p_217053_ p_217053_
+		2 p_217054_ p_217054_
+	enchantSpawnedWeapon (Lnet/minecraft/util/RandomSource;F)V m_214095_
+		0 p_217049_ p_217049_
+		1 p_217050_ p_217050_
+	equipItemIfPossible (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/item/ItemStack; m_255207_
+		0 p_255842_ p_255842_
+	finalizeSpawn (Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/MobSpawnType;Lnet/minecraft/world/entity/SpawnGroupData;Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/world/entity/SpawnGroupData; m_6518_
+		0 p_21434_ p_21434_
+		1 p_21435_ p_21435_
+		2 p_21436_ p_21436_
+		3 p_21437_ p_21437_
+		4 p_21438_ p_21438_
+	getAmbientSound ()Lnet/minecraft/sounds/SoundEvent; m_7515_
+	getAmbientSoundInterval ()I m_8100_
+	getArmorSlots ()Ljava/lang/Iterable; m_6168_
+	getControllingPassenger ()Lnet/minecraft/world/entity/LivingEntity; m_6688_
+	getDefaultLootTable ()Lnet/minecraft/resources/ResourceLocation; m_7582_
+	getEquipmentDropChance (Lnet/minecraft/world/entity/EquipmentSlot;)F m_21519_
+		0 p_21520_ p_21520_
+	getEquipmentForSlot (Lnet/minecraft/world/entity/EquipmentSlot;I)Lnet/minecraft/world/item/Item; m_21412_
+		static
+		0 p_21413_ p_21413_
+		1 p_21414_ p_21414_
+	getExperienceReward ()I m_213860_
+	getHandSlots ()Ljava/lang/Iterable; m_6167_
+	getHeadRotSpeed ()I m_21529_
+	getItemBySlot (Lnet/minecraft/world/entity/EquipmentSlot;)Lnet/minecraft/world/item/ItemStack; m_6844_
+		0 p_21467_ p_21467_
+	getJumpControl ()Lnet/minecraft/world/entity/ai/control/JumpControl; m_21569_
+	getLeashHolder ()Lnet/minecraft/world/entity/Entity; m_21524_
+	getLookControl ()Lnet/minecraft/world/entity/ai/control/LookControl; m_21563_
+	getLootTable ()Lnet/minecraft/resources/ResourceLocation; m_5743_
+	getLootTableSeed ()J m_287233_
+	getMainArm ()Lnet/minecraft/world/entity/HumanoidArm; m_5737_
+	getMaxFallDistance ()I m_6056_
+	getMaxHeadXRot ()I m_8132_
+	getMaxHeadYRot ()I m_8085_
+	getMaxSpawnClusterSize ()I m_5792_
+	getMeleeAttackRangeSqr (Lnet/minecraft/world/entity/LivingEntity;)D m_142593_
+		0 p_147273_ p_147273_
+	getMoveControl ()Lnet/minecraft/world/entity/ai/control/MoveControl; m_21566_
+	getNavigation ()Lnet/minecraft/world/entity/ai/navigation/PathNavigation; m_21573_
+	getPathfindingMalus (Lnet/minecraft/world/level/pathfinder/BlockPathTypes;)F m_21439_
+		0 p_21440_ p_21440_
+	getPerceivedTargetDistanceSquareForMeleeAttack (Lnet/minecraft/world/entity/LivingEntity;)D m_262793_
+		0 p_263021_ p_263021_
+	getPickResult ()Lnet/minecraft/world/item/ItemStack; m_142340_
+	getPickupReach ()Lnet/minecraft/core/Vec3i; m_213552_
+	getRestrictCenter ()Lnet/minecraft/core/BlockPos; m_21534_
+	getRestrictRadius ()F m_21535_
+	getSensing ()Lnet/minecraft/world/entity/ai/sensing/Sensing; m_21574_
+	getTarget ()Lnet/minecraft/world/entity/LivingEntity; m_5448_
+	handleEntityEvent (B)V m_7822_
+		0 p_21375_ p_21375_
+	hasRestriction ()Z m_21536_
+	interact (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResult; m_6096_
+		0 p_21420_ p_21420_
+		1 p_21421_ p_21421_
+	isAggressive ()Z m_5912_
+	isEffectiveAi ()Z m_21515_
+	isLeashed ()Z m_21523_
+	isLeftHanded ()Z m_21526_
+	isMaxGroupSizeReached (I)Z m_7296_
+		0 p_21489_ p_21489_
+	isNoAi ()Z m_21525_
+	isPersistenceRequired ()Z m_21532_
+	isSunBurnTick ()Z m_21527_
+	isWithinMeleeAttackRange (Lnet/minecraft/world/entity/LivingEntity;)Z m_217066_
+		0 p_217067_ p_217067_
+	isWithinRestriction (Lnet/minecraft/core/BlockPos;)Z m_21444_
+		0 p_21445_ p_21445_
+	isWithinRestriction ()Z m_21533_
+	jumpInLiquid (Lnet/minecraft/tags/TagKey;)V m_203347_
+		0 p_204045_ p_204045_
+	lambda$canReplaceEqualItem$0 (Ljava/lang/String;)Z m_21512_
+		static
+		0 p_21513_ p_21513_
+	lambda$canReplaceEqualItem$1 (Ljava/lang/String;)Z m_21502_
+		static
+		0 p_21503_ p_21503_
+	lambda$checkAndHandleImportantInteractions$2 (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/entity/Mob;)V m_21474_
+		0 p_21475_ p_21475_
+		1 p_21476_ p_21476_
+	lambda$removeAfterChangingDimensions$4 (Lnet/minecraft/world/item/ItemStack;)V m_278552_
+		static
+		0 p_278936_ p_278936_
+	lambda$removeFreeWill$3 (Lnet/minecraft/world/entity/ai/goal/Goal;)Z m_262356_
+		static
+		0 p_262562_ p_262562_
+	lookAt (Lnet/minecraft/world/entity/Entity;FF)V m_21391_
+		0 p_21392_ p_21392_
+		1 p_21393_ p_21393_
+		2 p_21394_ p_21394_
+	maybeDisableShield (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)V m_21424_
+		0 p_21425_ p_21425_
+		1 p_21426_ p_21426_
+		2 p_21427_ p_21427_
+	mobInteract (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResult; m_6071_
+		0 p_21472_ p_21472_
+		1 p_21473_ p_21473_
+	onOffspringSpawnedFromEgg (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/entity/Mob;)V m_5502_
+		0 p_21422_ p_21422_
+		1 p_21423_ p_21423_
+	onPathfindingDone ()V m_284461_
+	onPathfindingStart ()V m_284177_
+	pickUpItem (Lnet/minecraft/world/entity/item/ItemEntity;)V m_7581_
+		0 p_21471_ p_21471_
+	playAmbientSound ()V m_8032_
+	playHurtSound (Lnet/minecraft/world/damagesource/DamageSource;)V m_6677_
+		0 p_21493_ p_21493_
+	populateDefaultEquipmentEnchantments (Lnet/minecraft/util/RandomSource;Lnet/minecraft/world/DifficultyInstance;)V m_213946_
+		0 p_217063_ p_217063_
+		1 p_217064_ p_217064_
+	populateDefaultEquipmentSlots (Lnet/minecraft/util/RandomSource;Lnet/minecraft/world/DifficultyInstance;)V m_213945_
+		0 p_217055_ p_217055_
+		1 p_217056_ p_217056_
+	readAdditionalSaveData (Lnet/minecraft/nbt/CompoundTag;)V m_7378_
+		0 p_21450_ p_21450_
+	registerGoals ()V m_8099_
+	removeAfterChangingDimensions ()V m_6089_
+	removeAllGoals (Ljava/util/function/Predicate;)V m_262441_
+		0 p_262667_ p_262667_
+	removeFreeWill ()V m_147272_
+	removeWhenFarAway (D)Z m_6785_
+		0 p_21542_ p_21542_
+	requiresCustomPersistence ()Z m_8023_
+	resetAmbientSoundTime ()V m_21551_
+	restoreLeashFromSave ()V m_21528_
+	restrictTo (Lnet/minecraft/core/BlockPos;I)V m_21446_
+		0 p_21447_ p_21447_
+		1 p_21448_ p_21448_
+	rotlerp (FFF)F m_21376_
+		0 p_21377_ p_21377_
+		1 p_21378_ p_21378_
+		2 p_21379_ p_21379_
+	sendDebugPackets ()V m_8025_
+	serverAiStep ()V m_6140_
+	setAggressive (Z)V m_21561_
+		0 p_21562_ p_21562_
+	setBaby (Z)V m_6863_
+		0 p_21451_ p_21451_
+	setCanPickUpLoot (Z)V m_21553_
+		0 p_21554_ p_21554_
+	setDelayedLeashHolderId (I)V m_21506_
+		0 p_21507_ p_21507_
+	setDropChance (Lnet/minecraft/world/entity/EquipmentSlot;F)V m_21409_
+		0 p_21410_ p_21410_
+		1 p_21411_ p_21411_
+	setGuaranteedDrop (Lnet/minecraft/world/entity/EquipmentSlot;)V m_21508_
+		0 p_21509_ p_21509_
+	setItemSlot (Lnet/minecraft/world/entity/EquipmentSlot;Lnet/minecraft/world/item/ItemStack;)V m_8061_
+		0 p_21416_ p_21416_
+		1 p_21417_ p_21417_
+	setItemSlotAndDropWhenKilled (Lnet/minecraft/world/entity/EquipmentSlot;Lnet/minecraft/world/item/ItemStack;)V m_21468_
+		0 p_21469_ p_21469_
+		1 p_21470_ p_21470_
+	setLeashedTo (Lnet/minecraft/world/entity/Entity;Z)V m_21463_
+		0 p_21464_ p_21464_
+		1 p_21465_ p_21465_
+	setLeftHanded (Z)V m_21559_
+		0 p_21560_ p_21560_
+	setNoAi (Z)V m_21557_
+		0 p_21558_ p_21558_
+	setPathfindingMalus (Lnet/minecraft/world/level/pathfinder/BlockPathTypes;F)V m_21441_
+		0 p_21442_ p_21442_
+		1 p_21443_ p_21443_
+	setPersistenceRequired ()V m_21530_
+	setSpeed (F)V m_7910_
+		0 p_21556_ p_21556_
+	setTarget (Lnet/minecraft/world/entity/LivingEntity;)V m_6710_
+		0 p_21544_ p_21544_
+	setXxa (F)V m_21570_
+		0 p_21571_ p_21571_
+	setYya (F)V m_21567_
+		0 p_21568_ p_21568_
+	setZza (F)V m_21564_
+		0 p_21565_ p_21565_
+	shouldDespawnInPeaceful ()Z m_8028_
+	shouldPassengersInheritMalus ()Z m_8091_
+	spawnAnim ()V m_21373_
+	startRiding (Lnet/minecraft/world/entity/Entity;Z)Z m_7998_
+		0 p_21396_ p_21396_
+		1 p_21397_ p_21397_
+	tick ()V m_8119_
+	tickHeadTurn (FF)F m_5632_
+		0 p_21538_ p_21538_
+		1 p_21539_ p_21539_
+	tickLeash ()V m_6119_
+	updateControlFlags ()V m_8022_
+	wantsToPickUp (Lnet/minecraft/world/item/ItemStack;)Z m_7243_
+		0 p_21546_ p_21546_
+net/minecraft/world/entity/animal/Animal net/minecraft/world/entity/animal/Animal
+	PARENT_AGE_AFTER_BREEDING f_148714_
+	inLove f_27554_
+	loveCause f_27555_
+	<init> (Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)V <init>
+		0 p_27557_ p_27557_
+		1 p_27558_ p_27558_
+	addAdditionalSaveData (Lnet/minecraft/nbt/CompoundTag;)V m_7380_
+		0 p_27587_ p_27587_
+	aiStep ()V m_8107_
+	canFallInLove ()Z m_5957_
+	canMate (Lnet/minecraft/world/entity/animal/Animal;)Z m_7848_
+		0 p_27569_ p_27569_
+	checkAnimalSpawnRules (Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/world/entity/MobSpawnType;Lnet/minecraft/core/BlockPos;Lnet/minecraft/util/RandomSource;)Z m_218104_
+		static
+		0 p_218105_ p_218105_
+		1 p_218106_ p_218106_
+		2 p_218107_ p_218107_
+		3 p_218108_ p_218108_
+		4 p_218109_ p_218109_
+	customServerAiStep ()V m_8024_
+	finalizeSpawnChildFromBreeding (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/animal/Animal;Lnet/minecraft/world/entity/AgeableMob;)V m_277117_
+		0 p_277963_ p_277963_
+		1 p_277357_ p_277357_
+		2 p_277516_ p_277516_
+	getAmbientSoundInterval ()I m_8100_
+	getExperienceReward ()I m_213860_
+	getInLoveTime ()I m_27591_
+	getLoveCause ()Lnet/minecraft/server/level/ServerPlayer; m_27592_
+	getMyRidingOffset ()D m_6049_
+	getWalkTargetValue (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/LevelReader;)F m_5610_
+		0 p_27573_ p_27573_
+		1 p_27574_ p_27574_
+	handleEntityEvent (B)V m_7822_
+		0 p_27562_ p_27562_
+	hurt (Lnet/minecraft/world/damagesource/DamageSource;F)Z m_6469_
+		0 p_27567_ p_27567_
+		1 p_27568_ p_27568_
+	isBrightEnoughToSpawn (Lnet/minecraft/world/level/BlockAndTintGetter;Lnet/minecraft/core/BlockPos;)Z m_186209_
+		static
+		0 p_186210_ p_186210_
+		1 p_186211_ p_186211_
+	isFood (Lnet/minecraft/world/item/ItemStack;)Z m_6898_
+		0 p_27600_ p_27600_
+	isInLove ()Z m_27593_
+	lambda$finalizeSpawnChildFromBreeding$0 (Lnet/minecraft/world/entity/animal/Animal;)Ljava/util/Optional; m_276984_
+		static
+		0 p_277355_ p_277355_
+	lambda$finalizeSpawnChildFromBreeding$1 (Lnet/minecraft/world/entity/animal/Animal;Lnet/minecraft/world/entity/AgeableMob;Lnet/minecraft/server/level/ServerPlayer;)V m_276832_
+		0 p_278080_ p_278080_
+		1 p_277813_ p_277813_
+		2 p_277486_ p_277486_
+	mobInteract (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResult; m_6071_
+		0 p_27584_ p_27584_
+		1 p_27585_ p_27585_
+	readAdditionalSaveData (Lnet/minecraft/nbt/CompoundTag;)V m_7378_
+		0 p_27576_ p_27576_
+	removeWhenFarAway (D)Z m_6785_
+		0 p_27598_ p_27598_
+	resetLove ()V m_27594_
+	setInLove (Lnet/minecraft/world/entity/player/Player;)V m_27595_
+		0 p_27596_ p_27596_
+	setInLoveTime (I)V m_27601_
+		0 p_27602_ p_27602_
+	spawnChildFromBreeding (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/animal/Animal;)V m_27563_
+		0 p_27564_ p_27564_
+		1 p_27565_ p_27565_
+	usePlayerItem (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/item/ItemStack;)V m_142075_
+		0 p_148715_ p_148715_
+		1 p_148716_ p_148716_
+		2 p_148717_ p_148717_
+net/minecraft/world/entity/player/Player net/minecraft/world/entity/player/Player
+	CROUCH_BB_HEIGHT f_150087_
+	DATA_PLAYER_ABSORPTION_ID f_36107_
+	DATA_PLAYER_MAIN_HAND f_36090_
+	DATA_PLAYER_MODE_CUSTOMISATION f_36089_
+	DATA_SCORE_ID f_36108_
+	DATA_SHOULDER_LEFT f_36091_
+	DATA_SHOULDER_RIGHT f_36092_
+	DEFAULT_EYE_HEIGHT f_150090_
+	ENDER_SLOT_OFFSET f_150086_
+	FLY_ACHIEVEMENT_SPEED f_150091_
+	LOGGER f_219722_
+	MAX_HEALTH f_150083_
+	MAX_NAME_LENGTH f_150082_
+	POSES f_36074_
+	SLEEP_DURATION f_150084_
+	STANDING_DIMENSIONS f_36088_
+	SWIMMING_BB_HEIGHT f_150089_
+	SWIMMING_BB_WIDTH f_150088_
+	WAKE_UP_DURATION f_150085_
+	abilities f_36077_
+	bob f_36100_
+	containerMenu f_36096_
+	cooldowns f_36087_
+	defaultFlySpeed f_36082_
+	enchantmentSeed f_36081_
+	enderChestInventory f_36094_
+	experienceLevel f_36078_
+	experienceProgress f_36080_
+	fishing f_36083_
+	foodData f_36097_
+	gameProfile f_36084_
+	hurtDir f_263750_
+	inventory f_36093_
+	inventoryMenu f_36095_
+	jumpTriggerTime f_36098_
+	lastDeathLocation f_238176_
+	lastItemInMainHand f_36086_
+	lastLevelUpTime f_36111_
+	oBob f_36099_
+	reducedDebugInfo f_36085_
+	sleepCounter f_36110_
+	takeXpDelay f_36101_
+	timeEntitySatOnShoulder f_36109_
+	totalExperience f_36079_
+	wasUnderwater f_36076_
+	xCloak f_36105_
+	xCloakO f_36102_
+	yCloak f_36106_
+	yCloakO f_36103_
+	zCloak f_36075_
+	zCloakO f_36104_
+	<clinit> ()V <clinit>
+		static
+	<init> (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;FLcom/mojang/authlib/GameProfile;)V <init>
+		0 p_250508_ p_250508_
+		1 p_250289_ p_250289_
+		2 p_251702_ p_251702_
+		3 p_252153_ p_252153_
+	actuallyHurt (Lnet/minecraft/world/damagesource/DamageSource;F)V m_6475_
+		0 p_36312_ p_36312_
+		1 p_36313_ p_36313_
+	addAdditionalSaveData (Lnet/minecraft/nbt/CompoundTag;)V m_7380_
+		0 p_36265_ p_36265_
+	addItem (Lnet/minecraft/world/item/ItemStack;)Z m_36356_
+		0 p_36357_ p_36357_
+	addParticlesAroundSelf (Lnet/minecraft/core/particles/ParticleOptions;)V m_36208_
+		0 p_36209_ p_36209_
+	aiStep ()V m_8107_
+	animateHurt (F)V m_6053_
+		0 p_265280_ p_265280_
+	attack (Lnet/minecraft/world/entity/Entity;)V m_5706_
+		0 p_36347_ p_36347_
+	awardRecipes (Ljava/util/Collection;)I m_7281_
+		0 p_36213_ p_36213_
+	awardRecipesByKey ([Lnet/minecraft/resources/ResourceLocation;)V m_7902_
+		0 p_36228_ p_36228_
+	awardStat (Lnet/minecraft/stats/Stat;)V m_36246_
+		0 p_36247_ p_36247_
+	awardStat (Lnet/minecraft/resources/ResourceLocation;I)V m_36222_
+		0 p_36223_ p_36223_
+		1 p_36224_ p_36224_
+	awardStat (Lnet/minecraft/resources/ResourceLocation;)V m_36220_
+		0 p_36221_ p_36221_
+	awardStat (Lnet/minecraft/stats/Stat;I)V m_6278_
+		0 p_36145_ p_36145_
+		1 p_36146_ p_36146_
+	blockActionRestricted (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/GameType;)Z m_36187_
+		0 p_36188_ p_36188_
+		1 p_36189_ p_36189_
+		2 p_36190_ p_36190_
+	blockUsingShield (Lnet/minecraft/world/entity/LivingEntity;)V m_6728_
+		0 p_36295_ p_36295_
+	canBeHitByProjectile ()Z m_271807_
+	canBeSeenAsEnemy ()Z m_142066_
+	canEat (Z)Z m_36391_
+		0 p_36392_ p_36392_
+	canHarmPlayer (Lnet/minecraft/world/entity/player/Player;)Z m_7099_
+		0 p_36169_ p_36169_
+	canSprint ()Z m_264410_
+	canTakeItem (Lnet/minecraft/world/item/ItemStack;)Z m_7066_
+		0 p_36315_ p_36315_
+	canUseGameMasterBlocks ()Z m_36337_
+	causeFallDamage (FFLnet/minecraft/world/damagesource/DamageSource;)Z m_142535_
+		0 p_150093_ p_150093_
+		1 p_150094_ p_150094_
+		2 p_150095_ p_150095_
+	causeFoodExhaustion (F)V m_36399_
+		0 p_36400_ p_36400_
+	checkMovementStatistics (DDD)V m_36378_
+		0 p_36379_ p_36379_
+		1 p_36380_ p_36380_
+		2 p_36381_ p_36381_
+	checkRidingStatistics (DDD)V m_36387_
+		0 p_36388_ p_36388_
+		1 p_36389_ p_36389_
+		2 p_36390_ p_36390_
+	closeContainer ()V m_6915_
+	createAttributes ()Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder; m_36340_
+		static
+	createItemCooldowns ()Lnet/minecraft/world/item/ItemCooldowns; m_7478_
+	crit (Lnet/minecraft/world/entity/Entity;)V m_5704_
+		0 p_36156_ p_36156_
+	decorateDisplayNameComponent (Lnet/minecraft/network/chat/MutableComponent;)Lnet/minecraft/network/chat/MutableComponent; m_36218_
+		0 p_36219_ p_36219_
+	defineSynchedData ()V m_8097_
+	destroyVanishingCursedItems ()V m_36345_
+	die (Lnet/minecraft/world/damagesource/DamageSource;)V m_6667_
+		0 p_36152_ p_36152_
+	disableShield (Z)V m_36384_
+		0 p_36385_ p_36385_
+	displayClientMessage (Lnet/minecraft/network/chat/Component;Z)V m_5661_
+		0 p_36216_ p_36216_
+		1 p_36217_ p_36217_
+	doAutoAttackOnTouch (Lnet/minecraft/world/entity/LivingEntity;)V m_6727_
+		0 p_36355_ p_36355_
+	doCloseContainer ()V m_9230_
+	doWaterSplashEffect ()V m_5841_
+	doesEmitEquipEvent (Lnet/minecraft/world/entity/EquipmentSlot;)Z m_213772_
+		0 p_219741_ p_219741_
+	drop (Lnet/minecraft/world/item/ItemStack;Z)Lnet/minecraft/world/entity/item/ItemEntity; m_36176_
+		0 p_36177_ p_36177_
+		1 p_36178_ p_36178_
+	drop (Lnet/minecraft/world/item/ItemStack;ZZ)Lnet/minecraft/world/entity/item/ItemEntity; m_7197_
+		0 p_36179_ p_36179_
+		1 p_36180_ p_36180_
+		2 p_36181_ p_36181_
+	dropEquipment ()V m_5907_
+	eat (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/item/ItemStack; m_5584_
+		0 p_36185_ p_36185_
+		1 p_36186_ p_36186_
+	findRespawnPositionAndUseSpawnBlock (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;FZZ)Ljava/util/Optional; m_36130_
+		static
+		0 p_36131_ p_36131_
+		1 p_36132_ p_36132_
+		2 p_36133_ p_36133_
+		3 p_36134_ p_36134_
+		4 p_36135_ p_36135_
+	freeAt (Lnet/minecraft/core/BlockPos;)Z m_36350_
+		0 p_36351_ p_36351_
+	getAbilities ()Lnet/minecraft/world/entity/player/Abilities; m_150110_
+	getAbsorptionAmount ()F m_6103_
+	getArmorSlots ()Ljava/lang/Iterable; m_6168_
+	getAttackStrengthScale (F)F m_36403_
+		0 p_36404_ p_36404_
+	getBlockSpeedFactor ()F m_6041_
+	getCooldowns ()Lnet/minecraft/world/item/ItemCooldowns; m_36335_
+	getCurrentItemAttackStrengthDelay ()F m_36333_
+	getDeathSound ()Lnet/minecraft/sounds/SoundEvent; m_5592_
+	getDestroySpeed (Lnet/minecraft/world/level/block/state/BlockState;)F m_36281_
+		0 p_36282_ p_36282_
+	getDimensionChangingDelay ()I m_6045_
+	getDimensions (Lnet/minecraft/world/entity/Pose;)Lnet/minecraft/world/entity/EntityDimensions; m_6972_
+		0 p_36166_ p_36166_
+	getDismountPoses ()Lcom/google/common/collect/ImmutableList; m_7431_
+	getDisplayName ()Lnet/minecraft/network/chat/Component; m_5446_
+	getEnchantmentSeed ()I m_36322_
+	getEnderChestInventory ()Lnet/minecraft/world/inventory/PlayerEnderChestContainer; m_36327_
+	getExperienceReward ()I m_213860_
+	getFallSounds ()Lnet/minecraft/world/entity/LivingEntity$Fallsounds; m_196493_
+	getFireImmuneTicks ()I m_6101_
+	getFlyingSpeed ()F m_274460_
+	getFoodData ()Lnet/minecraft/world/food/FoodData; m_36324_
+	getGameProfile ()Lcom/mojang/authlib/GameProfile; m_36316_
+	getHandSlots ()Ljava/lang/Iterable; m_6167_
+	getHurtDir ()F m_264297_
+	getHurtSound (Lnet/minecraft/world/damagesource/DamageSource;)Lnet/minecraft/sounds/SoundEvent; m_7975_
+		0 p_36310_ p_36310_
+	getInventory ()Lnet/minecraft/world/entity/player/Inventory; m_150109_
+	getItemBySlot (Lnet/minecraft/world/entity/EquipmentSlot;)Lnet/minecraft/world/item/ItemStack; m_6844_
+		0 p_36257_ p_36257_
+	getLastDeathLocation ()Ljava/util/Optional; m_219759_
+	getLuck ()F m_36336_
+	getMainArm ()Lnet/minecraft/world/entity/HumanoidArm; m_5737_
+	getMovementEmission ()Lnet/minecraft/world/entity/Entity$MovementEmission; m_142319_
+	getMyRidingOffset ()D m_6049_
+	getName ()Lnet/minecraft/network/chat/Component; m_7755_
+	getPortalWaitTime ()I m_6078_
+	getProjectile (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/item/ItemStack; m_6298_
+		0 p_36349_ p_36349_
+	getRopeHoldPosition (F)Lnet/minecraft/world/phys/Vec3; m_7398_
+		0 p_36374_ p_36374_
+	getScore ()I m_36344_
+	getScoreboard ()Lnet/minecraft/world/scores/Scoreboard; m_36329_
+	getScoreboardName ()Ljava/lang/String; m_6302_
+	getShoulderEntityLeft ()Lnet/minecraft/nbt/CompoundTag; m_36331_
+	getShoulderEntityRight ()Lnet/minecraft/nbt/CompoundTag; m_36332_
+	getSleepTimer ()I m_36318_
+	getSlot (I)Lnet/minecraft/world/entity/SlotAccess; m_141942_
+		0 p_150112_ p_150112_
+	getSoundSource ()Lnet/minecraft/sounds/SoundSource; m_5720_
+	getSpeed ()F m_6113_
+	getStandingEyeHeight (Lnet/minecraft/world/entity/Pose;Lnet/minecraft/world/entity/EntityDimensions;)F m_6431_
+		0 p_36259_ p_36259_
+		1 p_36260_ p_36260_
+	getSwimHighSpeedSplashSound ()Lnet/minecraft/sounds/SoundEvent; m_5508_
+	getSwimSound ()Lnet/minecraft/sounds/SoundEvent; m_5501_
+	getSwimSplashSound ()Lnet/minecraft/sounds/SoundEvent; m_5509_
+	getWardenSpawnTracker ()Ljava/util/Optional; m_245217_
+	getXpNeededForNextLevel ()I m_36323_
+	giveExperienceLevels (I)V m_6749_
+		0 p_36276_ p_36276_
+	giveExperiencePoints (I)V m_6756_
+		0 p_36291_ p_36291_
+	handleEntityEvent (B)V m_7822_
+		0 p_36120_ p_36120_
+	hasContainerOpen ()Z m_242612_
+	hasCorrectToolForDrops (Lnet/minecraft/world/level/block/state/BlockState;)Z m_36298_
+		0 p_36299_ p_36299_
+	hurt (Lnet/minecraft/world/damagesource/DamageSource;F)Z m_6469_
+		0 p_36154_ p_36154_
+		1 p_36155_ p_36155_
+	hurtArmor (Lnet/minecraft/world/damagesource/DamageSource;F)V m_6472_
+		0 p_36251_ p_36251_
+		1 p_36252_ p_36252_
+	hurtCurrentlyUsedShield (F)V m_7909_
+		0 p_36383_ p_36383_
+	hurtHelmet (Lnet/minecraft/world/damagesource/DamageSource;F)V m_142642_
+		0 p_150103_ p_150103_
+		1 p_150104_ p_150104_
+	increaseScore (I)V m_36401_
+		0 p_36402_ p_36402_
+	interactOn (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResult; m_36157_
+		0 p_36158_ p_36158_
+		1 p_36159_ p_36159_
+	isAboveGround ()Z m_36386_
+	isAffectedByFluids ()Z m_6129_
+	isAlwaysExperienceDropper ()Z m_6124_
+	isAlwaysTicking ()Z m_142389_
+	isCreative ()Z m_7500_
+	isHurt ()Z m_36325_
+	isImmobile ()Z m_6107_
+	isInvulnerableTo (Lnet/minecraft/world/damagesource/DamageSource;)Z m_6673_
+		0 p_36249_ p_36249_
+	isLocalPlayer ()Z m_7578_
+	isModelPartShown (Lnet/minecraft/world/entity/player/PlayerModelPart;)Z m_36170_
+		0 p_36171_ p_36171_
+	isPushedByFluid ()Z m_6063_
+	isReducedDebugInfo ()Z m_36330_
+	isScoping ()Z m_150108_
+	isSecondaryUseActive ()Z m_36341_
+	isSleepingLongEnough ()Z m_36317_
+	isSpectator ()Z m_5833_
+	isStayingOnGroundSurface ()Z m_36343_
+	isSwimming ()Z m_6069_
+	isTextFilteringEnabled ()Z m_143387_
+	jumpFromGround ()V m_6135_
+	killedEntity (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;)Z m_214076_
+		0 p_219735_ p_219735_
+		1 p_219736_ p_219736_
+	lambda$addAdditionalSaveData$2 (Lnet/minecraft/core/GlobalPos;)Ljava/util/Optional; m_219744_
+		static
+		0 p_219745_ p_219745_
+	lambda$addAdditionalSaveData$3 (Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/nbt/Tag;)V m_219754_
+		static
+		0 p_219755_ p_219755_
+		1 p_219756_ p_219756_
+	lambda$decorateDisplayNameComponent$6 (Ljava/lang/String;Lnet/minecraft/network/chat/Style;)Lnet/minecraft/network/chat/Style; m_289164_
+		0 p_289489_ p_289489_
+		1 p_289490_ p_289490_
+	lambda$hurtCurrentlyUsedShield$4 (Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/entity/player/Player;)V m_219737_
+		static
+		0 p_219738_ p_219738_
+		1 p_219739_ p_219739_
+	lambda$playShoulderEntityAmbientSound$0 (Lnet/minecraft/world/entity/EntityType;)Z m_36279_
+		static
+		0 p_36280_ p_36280_
+	lambda$playShoulderEntityAmbientSound$1 (Lnet/minecraft/world/entity/EntityType;)V m_289163_
+		0 p_289488_ p_289488_
+	lambda$respawnEntityOnShoulder$5 (Lnet/minecraft/world/entity/Entity;)V m_289165_
+		0 p_289491_ p_289491_
+	magicCrit (Lnet/minecraft/world/entity/Entity;)V m_5700_
+		0 p_36253_ p_36253_
+	makeStuckInBlock (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/phys/Vec3;)V m_7601_
+		0 p_36196_ p_36196_
+		1 p_36197_ p_36197_
+	mayBuild ()Z m_36326_
+	mayUseItemAt (Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;Lnet/minecraft/world/item/ItemStack;)Z m_36204_
+		0 p_36205_ p_36205_
+		1 p_36206_ p_36206_
+		2 p_36207_ p_36207_
+	maybeBackOffFromEdge (Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/entity/MoverType;)Lnet/minecraft/world/phys/Vec3; m_5763_
+		0 p_36201_ p_36201_
+		1 p_36202_ p_36202_
+	moveCloak ()V m_36377_
+	onEnchantmentPerformed (Lnet/minecraft/world/item/ItemStack;I)V m_7408_
+		0 p_36172_ p_36172_
+		1 p_36173_ p_36173_
+	onSoulSpeedBlock ()Z m_6046_
+	onUpdateAbilities ()V m_6885_
+	openCommandBlock (Lnet/minecraft/world/level/block/entity/CommandBlockEntity;)V m_7698_
+		0 p_36191_ p_36191_
+	openHorseInventory (Lnet/minecraft/world/entity/animal/horse/AbstractHorse;Lnet/minecraft/world/Container;)V m_6658_
+		0 p_36167_ p_36167_
+		1 p_36168_ p_36168_
+	openItemGui (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/InteractionHand;)V m_6986_
+		0 p_36174_ p_36174_
+		1 p_36175_ p_36175_
+	openJigsawBlock (Lnet/minecraft/world/level/block/entity/JigsawBlockEntity;)V m_7569_
+		0 p_36192_ p_36192_
+	openMenu (Lnet/minecraft/world/MenuProvider;)Ljava/util/OptionalInt; m_5893_
+		0 p_36150_ p_36150_
+	openMinecartCommandBlock (Lnet/minecraft/world/level/BaseCommandBlock;)V m_7907_
+		0 p_36182_ p_36182_
+	openStructureBlock (Lnet/minecraft/world/level/block/entity/StructureBlockEntity;)V m_5966_
+		0 p_36194_ p_36194_
+	openTextEdit (Lnet/minecraft/world/level/block/entity/SignBlockEntity;Z)V m_7739_
+		0 p_36193_ p_36193_
+		1 p_277837_ p_277837_
+	playNotifySound (Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FF)V m_6330_
+		0 p_36140_ p_36140_
+		1 p_36141_ p_36141_
+		2 p_36142_ p_36142_
+		3 p_36143_ p_36143_
+	playShoulderEntityAmbientSound (Lnet/minecraft/nbt/CompoundTag;)V m_36367_
+		0 p_36368_ p_36368_
+	playSound (Lnet/minecraft/sounds/SoundEvent;FF)V m_5496_
+		0 p_36137_ p_36137_
+		1 p_36138_ p_36138_
+		2 p_36139_ p_36139_
+	playStepSound (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)V m_7355_
+		0 p_282121_ p_282121_
+		1 p_282194_ p_282194_
+	readAdditionalSaveData (Lnet/minecraft/nbt/CompoundTag;)V m_7378_
+		0 p_36215_ p_36215_
+	remove (Lnet/minecraft/world/entity/Entity$RemovalReason;)V m_142687_
+		0 p_150097_ p_150097_
+	removeEntitiesOnShoulder ()V m_36328_
+	removeVehicle ()V m_6038_
+	resetAttackStrengthTicker ()V m_36334_
+	resetRecipes (Ljava/util/Collection;)I m_7279_
+		0 p_36263_ p_36263_
+	resetStat (Lnet/minecraft/stats/Stat;)V m_7166_
+		0 p_36144_ p_36144_
+	respawn ()V m_7583_
+	respawnEntityOnShoulder (Lnet/minecraft/nbt/CompoundTag;)V m_36370_
+		0 p_36371_ p_36371_
+	rideTick ()V m_6083_
+	sendMerchantOffers (ILnet/minecraft/world/item/trading/MerchantOffers;IIZZ)V m_7662_
+		0 p_36121_ p_36121_
+		1 p_36122_ p_36122_
+		2 p_36123_ p_36123_
+		3 p_36124_ p_36124_
+		4 p_36125_ p_36125_
+		5 p_36126_ p_36126_
+	serverAiStep ()V m_6140_
+	setAbsorptionAmount (F)V m_7911_
+		0 p_36396_ p_36396_
+	setEntityOnShoulder (Lnet/minecraft/nbt/CompoundTag;)Z m_36360_
+		0 p_36361_ p_36361_
+	setItemSlot (Lnet/minecraft/world/entity/EquipmentSlot;Lnet/minecraft/world/item/ItemStack;)V m_8061_
+		0 p_36161_ p_36161_
+		1 p_36162_ p_36162_
+	setLastDeathLocation (Ljava/util/Optional;)V m_219749_
+		0 p_219750_ p_219750_
+	setMainArm (Lnet/minecraft/world/entity/HumanoidArm;)V m_36163_
+		0 p_36164_ p_36164_
+	setReducedDebugInfo (Z)V m_36393_
+		0 p_36394_ p_36394_
+	setRemainingFireTicks (I)V m_7311_
+		0 p_36353_ p_36353_
+	setScore (I)V m_36397_
+		0 p_36398_ p_36398_
+	setShoulderEntityLeft (Lnet/minecraft/nbt/CompoundTag;)V m_36362_
+		0 p_36363_ p_36363_
+	setShoulderEntityRight (Lnet/minecraft/nbt/CompoundTag;)V m_36364_
+		0 p_36365_ p_36365_
+	shouldBeSaved ()Z m_142391_
+	shouldRemoveSoulSpeed (Lnet/minecraft/world/level/block/state/BlockState;)Z m_6757_
+		0 p_36262_ p_36262_
+	shouldShowName ()Z m_6052_
+	startAutoSpinAttack (I)V m_204079_
+		0 p_204080_ p_204080_
+	startFallFlying ()V m_36320_
+	startSleepInBed (Lnet/minecraft/core/BlockPos;)Lcom/mojang/datafixers/util/Either; m_7720_
+		0 p_36203_ p_36203_
+	stopFallFlying ()V m_36321_
+	stopSleepInBed (ZZ)V m_6145_
+		0 p_36226_ p_36226_
+		1 p_36227_ p_36227_
+	stopSleeping ()V m_5796_
+	sweepAttack ()V m_36346_
+	tick ()V m_8119_
+	touch (Lnet/minecraft/world/entity/Entity;)V m_36277_
+		0 p_36278_ p_36278_
+	travel (Lnet/minecraft/world/phys/Vec3;)V m_7023_
+		0 p_36359_ p_36359_
+	triggerRecipeCrafted (Lnet/minecraft/world/item/crafting/Recipe;Ljava/util/List;)V m_280300_
+		0 p_281669_ p_281669_
+		1 p_283609_ p_283609_
+	tryToStartFallFlying ()Z m_36319_
+	turtleHelmetTick ()V m_36372_
+	updateIsUnderwater ()Z m_7602_
+	updatePlayerPose ()V m_7594_
+	updateSwimming ()V m_5844_
+	updateTutorialInventoryAction (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/inventory/ClickAction;)V m_141945_
+		0 p_150098_ p_150098_
+		1 p_150099_ p_150099_
+		2 p_150100_ p_150100_
+	wantsToStopRiding ()Z m_36342_

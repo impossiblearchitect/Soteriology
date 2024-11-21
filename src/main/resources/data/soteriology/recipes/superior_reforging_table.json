@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [{
+	"type": "apotheosis:module",
+    "module": "adventure"
+  }],
+  "group": "something",
+  "pattern": [
+    " E ",
+    "GRG",
+    "BBB"
+  ],
+  "key": {
+    "E": {
+      "tag": "forge:ingots/enderite"
+    },
+	"G": {
+      "item": "apotheotic_additions:artifact_material"
+    },
+	"R": {
+      "item": "apotheosis:reforging_table"
+    },
+	"B": {
+      "item": "minecraft:end_stone_bricks"
+    }
+  },
+  "result": {
+    "item": "soteriology:superior_reforging_table",
+    "count": 1
+  }
+}

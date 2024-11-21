@@ -1,0 +1,150 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "harvest_tier": "minecraft:wood",
+  "availability": {
+    "tier": 5,
+    "categories": [
+      "organic",
+      "cloth"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "item": "primalmagick:saintswool"
+    }
+  },
+  "name": {
+    "translate": "material.primalmagick.saintswool"
+  },
+  "stats": {
+    "main": {
+      "durability": 0.0,
+      "armor_durability": 50.0,
+      "enchantment_value": 32.0,
+      "rarity": 100.0,
+      "charging_value": 2.0,
+      "armor": 26.0,
+      "armor/helmet": 4.0,
+      "armor/chestplate": 10.0,
+      "armor/leggings": 8.0,
+      "armor/boots": 4.0,
+      "armor_toughness": 12.0,
+      "magic_armor": 40.0,
+      "soteriology:mana_efficiency": 20.0,      
+      "soteriology:mana_efficiency/helmet": 4.0,
+      "soteriology:mana_efficiency/chestplate": 6.0,
+      "soteriology:mana_efficiency/leggings": 6.0,
+      "soteriology:mana_efficiency/boots": 4.0
+    },
+    "grip": {
+      "harvest_speed": {
+        "mul1": 0.3
+      },
+      "attack_speed": {
+        "mul1": 0.25
+      }
+    },
+    "lining": {
+      "armor": {
+        "mul1": 0.33333333
+      },
+      "armor_durability": {
+        "mul1": 0.25
+      },
+      "armor_toughness": {
+        "add": 12.0
+      },
+      "knockback_resistance": {
+        "add": 1.0
+      },
+      "magic_armor": {
+        "add": 30.0
+      },
+      "soteriology:mana_efficiency": {
+        "max": 20.0
+      },
+      "soteriology:mana_efficiency/helmet": {
+        "max": 4.0
+      },
+      "soteriology:mana_efficiency/chestplate": {
+        "max": 6.0
+      },
+      "soteriology:mana_efficiency/leggings": {
+        "max": 6.0
+      },
+      "soteriology:mana_efficiency/boots": {
+        "max": 4.0
+      }
+    }
+  },
+  "traits": {
+    "main": [
+      {
+        "name": "silentgear:sturdy",
+        "level": 3
+      },
+      {
+        "name": "soteriology:harmonic",
+        "level": 5
+      },
+      {
+        "name": "silentgear:snow_walker",
+        "level": 1,
+        "conditions": [
+          {
+            "type": "silentgear:gear_type",
+            "gear_type": "boots"
+          }
+        ]
+      }
+    ],
+    "grip": [
+      {
+        "name": "silentgear:sturdy",
+        "level": 3
+      }
+    ],
+    "lining": [
+      {
+        "name": "silentgear:sturdy",
+        "level": 4
+      }
+    ]
+  },
+  "model": {
+    "main/all": [
+      {
+        "texture": "silentgear:main_generic_lc",
+        "color": "#FAFCDD"
+      }
+    ],
+    "main/fragment": [
+      {
+        "texture": "silentgear:cloth",
+        "color": "#FAFCDD"
+      }
+    ],
+    "grip/all": [
+      {
+        "texture": "silentgear:grip_wool",
+        "color": "#FAFCDD"
+      }
+    ],
+    "grip/part": [
+      {
+        "texture": "silentgear:grip",
+        "color": "#FAFCDD"
+      }
+    ],
+    "lining/part": [
+      {
+        "texture": "silentgear:lining_cloth",
+        "color": "#FAFCDD"
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "type": "soteriology:forge_conditional",
+  "max_level": 1,
+  "conditions": [
+    {
+      "type": "silentgear:or",
+      "values": [
+        {
+          "type": "silentgear:gear_type",
+          "gear_type": "armor"
+        },
+        {
+          "type": "silentgear:gear_type",
+          "gear_type": "curio"
+        }
+      ]
+    }
+  ],
+  "name": {
+    "translate": "trait.soteriology.neptunes_might"
+  },
+  "description": {
+    "translate": "trait.soteriology.neptunes_might.desc"
+  },
+  "conditional_traits": {
+    "all": {
+      "type": "total_level",
+      "trait": {
+        "type": "silentgear:wielder_effect",
+        "max_level": 5,
+        "name": { "text": "Neptune's Might/Strength" },
+        "description": { "text": "Implementation detail for Neptune's Might."},
+        "hidden": true,
+        "potion_effects": {
+          "all": [
+            {
+              "type": "trait_level",
+              "effect": "minecraft:strength",
+              "level":  [1, 2, 3, 4, 5]
+            },
+            {
+              "type": "trait_level",
+              "effect": "minecraft:water_breathing",
+              "level":  1
+            }
+          ]
+        }
+      },
+      "level": [1, 2, 3, 4, 5],
+      "target": "self",
+      "condition": ["isInWaterOrRain"]
+    }
+  }
+}
