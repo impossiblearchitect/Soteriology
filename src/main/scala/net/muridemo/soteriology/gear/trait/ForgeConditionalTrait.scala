@@ -284,6 +284,7 @@ object ForgeConditionalTrait {
  
   enum Condition(val check: (Option[Entity]) => Boolean):
     case ALWAYS extends Condition(_ => true)
+    case VALID extends Condition(_.isDefined)
     case NEVER extends Condition(_ => false)
     case Reflective(methodName: String) extends Condition({
       val pred: ObfuscatedReflectivePredicate[Entity] = ObfuscatedReflectivePredicate[Entity](methodName)
@@ -296,6 +297,7 @@ object ForgeConditionalTrait {
     override def toString(): String = {
       this match
         case ALWAYS => "always"
+        case VALID => "valid"
         case NEVER => "never"
         case Reflective(methodName) => methodName
         case NOT(condition) => s"not($condition)"
@@ -306,6 +308,7 @@ object ForgeConditionalTrait {
     def fromString(s: String): Condition = {
       s match
         case "always" => ALWAYS
+        case "valid" => VALID
         case "never" => NEVER
         case s"not($condition)" => NOT(fromString(condition))
         case s"and($conditions)" => AND(conditions.split(",").map(fromString)*)
@@ -315,24 +318,26 @@ object ForgeConditionalTrait {
     def readBuf(buf: FriendlyByteBuf): Condition = {
       buf.readVarInt() match
         case 0 => ALWAYS
-        case 1 => NEVER
-        case 2 => Reflective(buf.readUtf())
-        case 3 => NOT(readBuf(buf))
-        case 4 => AND(ArraySeq.fill(buf.readVarInt())(readBuf(buf))*)
-        case 5 => OR(ArraySeq.fill(buf.readVarInt())(readBuf(buf))*)
+        case 1 => VALID
+        case 2 => NEVER
+        case 3 => Reflective(buf.readUtf())
+        case 4 => NOT(readBuf(buf))
+        case 5 => AND(ArraySeq.fill(buf.readVarInt())(readBuf(buf))*)
+        case 6 => OR(ArraySeq.fill(buf.readVarInt())(readBuf(buf))*)
     }
     def writeBuf(buf: FriendlyByteBuf, condition: Condition): FriendlyByteBuf = {
       condition match
         case ALWAYS => buf.writeVarInt(0)
-        case NEVER => buf.writeVarInt(1)
-        case Reflective(methodName) => buf.writeVarInt(2).writeUtf(methodName)
-        case NOT(condition) => buf.writeVarInt(3).writeVarInt(0)
+        case VALID => buf.writeVarInt(1)
+        case NEVER => buf.writeVarInt(2)
+        case Reflective(methodName) => buf.writeVarInt(3).writeUtf(methodName)
+        case NOT(condition) => buf.writeVarInt(4).writeVarInt(0)
         case AND(conditions*) => 
-          buf.writeVarInt(4).writeVarInt(conditions.length)
+          buf.writeVarInt(5).writeVarInt(conditions.length)
           conditions.foreach(writeBuf(buf, _))
           buf
         case OR(conditions*) => 
-          buf.writeVarInt(5).writeVarInt(conditions.length)
+          buf.writeVarInt(6).writeVarInt(conditions.length)
           conditions.foreach(writeBuf(buf, _))
           buf
     }
@@ -366,6 +371,7 @@ object ForgeConditionalTrait {
     * in addition to the reflective properties provided by `ReflectivePredicate`, `condition` recognizes five special values:
       * "and"/"or"/"not" for logical operations
       * "always"/"never" for unconditional activation/deactivation
+      * "valid" for a condition that is always true if the target is not null
    */
 
   def deserializeJson(`trait`: ForgeConditionalTrait, json: JsonObject) = {

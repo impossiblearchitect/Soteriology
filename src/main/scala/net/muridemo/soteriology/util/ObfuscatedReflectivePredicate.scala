@@ -62,7 +62,6 @@ class ObfuscatedReflectivePredicate[T](val memberName: String)(using ct: ClassTa
   override def apply(t: T): Boolean = 
     try {
       val out = memberHandle.invoke(t).asInstanceOf[Boolean]
-      println(s"ReflectivePredicate: $memberName($t) = $out")
       out
     } catch {
       case e: Throwable => 
