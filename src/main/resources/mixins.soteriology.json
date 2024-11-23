@@ -10,7 +10,8 @@
     "ItemStackMixin",
     "PrimalMagickPlayerEventMixin",
     "PrimalMagickCapabilityEventMixin",
-    "ApotheosisAdventureMixins"
+    "ApotheosisAdventureMixins",
+    "ApotheosisReforgingTableTileMixin"
   ],
   "client": [
     "PrimalMagickClientRenderEventMixin"

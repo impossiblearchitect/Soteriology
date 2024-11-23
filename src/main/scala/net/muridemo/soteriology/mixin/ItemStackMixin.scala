@@ -18,7 +18,7 @@ import net.muridemo.soteriology.gear.util.GearHelpers.*
 @Mixin(Array(classOf[ItemStack]))
 abstract class ItemStackMixin {
   this: ItemStack =>
-  @Inject(method = Array("m_204117_"), at = Array(new At(value = "HEAD")), cancellable = true, require = 1)
+  @Inject(method = Array("Lnet/minecraft/world/item/ItemStack;is(Lnet/minecraft/world/tags/TagKey;)Z" /*"m_204117_"*/), at = Array(new At(value = "HEAD")), cancellable = true, require = 1)
   private def onIs(tag: TagKey[Item], callback: CallbackInfoReturnable[Boolean]): Unit = {
     if (tag == ItemTagsPM.WARDABLE_ARMOR)
       val sgearWardable = this.isSGearWardable

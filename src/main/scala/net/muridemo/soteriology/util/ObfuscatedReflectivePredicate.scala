@@ -39,15 +39,6 @@ class ObfuscatedReflectivePredicate[T](val memberName: String)(using ct: ClassTa
     val rc = ct.runtimeClass
     val lookup = MethodHandles.lookup()
 
-    // memberName match 
-    //   case Field(field) => lookup.findGetter(rc, field.getMapped(), Class[Boolean])
-    //   case Method(method) => 
-        
-    //     lookup.findVirtual(rc, method.getMapped(), MethodType.methodType(classOf[Boolean]))
-
-    println(s"rc: $rc")
-    // rc.getGeneralizedFields().foreach(f => println(f))
-
     val (typ, handle) = rc.getGeneralizedFields().collectFirst{
       case MemberHandle(`memberObfs`, _, t, h) => (t, h)
     }.getOrElse{
