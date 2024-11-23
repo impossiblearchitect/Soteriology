@@ -100,7 +100,7 @@ object GearHelpers:
     def isSilentGear = GearHelper.isGear(stack)
     def hasTrait(`trait`: ResourceLocation) = TraitHelper.hasTrait(stack, `trait`)
     def getTraitLevel(`trait`: ResourceLocation) = TraitHelper.getTraitLevel(stack, `trait`)
-    def isWardable = stack.is(ItemTagsPM.WARDABLE_ARMOR) || (stack.isSilentGear && stack.hasTrait(Soteriology.WARDABLE_ID))
+    def isSGearWardable = stack.isSilentGear && stack.hasTrait(Soteriology.WARDABLE_ID)
     
   // extension [T <: SimpleTrait](`trait`: T) {
   //   def getSetPieceCount(`type`: String, player: Player): Int = {
