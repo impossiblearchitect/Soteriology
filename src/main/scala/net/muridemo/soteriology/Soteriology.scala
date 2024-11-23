@@ -53,6 +53,7 @@ object Soteriology {
   final val MOD_ID = "soteriology"
   // Directly reference a log4j logger.
   final val LOGGER = LogManager.getLogger
+  Soteriology.LOGGER.info("HELLO from Soteriology!")
 
   final val MANA_EFFICIENCY_ID = ResourceLocation(MOD_ID, "mana_efficiency")
   final val MANA_EFFICIENCY = ItemStats.register(SplitItemStat(Soteriology.MANA_EFFICIENCY_ID, 0f, 0f, 100f, Color.DODGERBLUE,
@@ -97,6 +98,11 @@ object Soteriology {
     "superior_reforging_table",
     () => new BlockItem(SUPERIOR_REFORGING_TABLE.get(), new Item.Properties().rarity(Rarity.EPIC))
   )
+
+  final val SGEAR_GENERICS = 
+    ("helmet" :: "chestplate" :: "leggings" :: "boots" :: Nil).map {
+      name => RegistryObject.create(new ResourceLocation("silentgear", name), ForgeRegistries.ITEMS)
+    }
 
   // val EXAMPLE_BLOCK: RegistryObject[Block] = BLOCKS.register("example_block", () => new Block(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)))
   // val EXAMPLE_BLOCK_ITEM: RegistryObject[Item] = ITEMS.register("example_block", () => new BlockItem(EXAMPLE_BLOCK.get(), new Item.Properties()))

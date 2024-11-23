@@ -222,9 +222,9 @@ mixin {
     add sourceSets.main, 'mixins.soteriology.refmap.json'
     config 'mixins.soteriology.json'
     debug {
-        verbose = true
-        export = true
-        countInjections = true
+        verbose true
+        export true
+        countInjections true
     }
 }
 
