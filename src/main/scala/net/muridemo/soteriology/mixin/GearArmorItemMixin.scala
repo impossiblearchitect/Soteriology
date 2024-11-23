@@ -29,7 +29,7 @@ import net.muridemo.soteriology.gear.util.GearHelpers.*
 import net.muridemo.soteriology.Soteriology
 
 @Mixin(Array(classOf[GearArmorItem]))
-class GearArmorItemMixin extends IManaDiscountGear, IManaDiscountEquipment {
+abstract class GearArmorItemMixin extends IManaDiscountGear, IManaDiscountEquipment {
 
     override def getManaDiscount(stack: ItemStack, player: Player, source: Source) = {
       val manaDiscount = GearData.getStatInt(stack, Soteriology.MANA_EFFICIENCY)
