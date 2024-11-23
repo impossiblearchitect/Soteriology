@@ -2,13 +2,19 @@
   "required": true,
   "minVersion": "0.8",
   "package": "net.muridemo.soteriology.mixin",
+  "refmap": "mixins.soteriology.refmap.json",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "GearArmorItemMixin",
     "TraitHelperMixin",
     "ItemStackMixin",
-    "PrimalMagickEventMixins",
+    "PrimalMagickPlayerEventMixin",
+    "PrimalMagickCapabilityEventMixin",
     "ApotheosisAdventureMixins"
   ],
-  "verbose": true
+  "client": [
+    "PrimalMagickClientRenderEventMixin"
+  ],
+  "verbose": true,
+  "minMixinExtrasVersion": "0.5.0-beta.4"
 }
